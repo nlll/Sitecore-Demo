@@ -1,6 +1,3 @@
-/**
- * This Layout is needed for Starter Kit.
- */
 import React from 'react';
 import Head from 'next/head';
 import { Placeholder, LayoutServiceData, Field, HTMLLink } from '@sitecore-jss/sitecore-jss-nextjs';
