@@ -13,6 +13,7 @@ import { sitecorePagePropsFactory } from 'lib/page-props-factory';
 import { componentBuilder } from 'temp/componentBuilder';
 import config from 'temp/config';
 import { sitemapFetcher } from 'lib/sitemap-fetcher';
+import { SessionProvider, useSession } from "next-auth/react"
 
 const SitecorePage = ({
   notFound,
@@ -32,7 +33,8 @@ const SitecorePage = ({
 
   const isEditing = layoutData.sitecore.context.pageEditing;
 
-  return (
+return (
+  <SessionProvider>
     <ComponentPropsContext value={componentProps}>
       <SitecoreContext
         componentFactory={componentBuilder.getComponentFactory({ isEditing })}
@@ -47,6 +49,7 @@ const SitecorePage = ({
         <Layout layoutData={layoutData} headLinks={headLinks} />
       </SitecoreContext>
     </ComponentPropsContext>
+  </SessionProvider>
   );
 };
 

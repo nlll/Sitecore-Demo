@@ -6,6 +6,7 @@ import {
   TextField,
   useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-nextjs';
+import { useSession } from "next-auth/react";
 
 interface Fields {
   Id: string;
@@ -16,6 +17,7 @@ interface Fields {
   Querystring: string;
   Children: Array<Fields>;
   Styles: string[];
+  Roles?: string[]; // Added Roles field to store role requirements
 }
 
 type NavigationProps = {
@@ -23,6 +25,40 @@ type NavigationProps = {
   fields: Fields;
   handleClick: (event?: React.MouseEvent<HTMLElement>) => void;
   relativeLevel: number;
+};
+
+// Check if a user has access to a navigation item based on roles
+const hasRoleAccess = (userRoles: string[] | undefined, itemRoles: string[] | undefined): boolean => {
+  // If no roles defined for the item, everyone can access it
+  // Log the roles for debugging
+  console.log('User roles:', userRoles);
+  console.log('Item roles:', itemRoles);
+
+  if (!itemRoles || itemRoles.length === 0) {
+    return true;
+  }
+  
+  // If user doesn't have roles but item requires them
+  if (!userRoles || userRoles.length === 0) {
+    return false;
+  }
+  
+  // Check if user has at least one of the required roles
+  return itemRoles.some(role => userRoles.includes(role));
+};
+
+// Filter navigation items recursively based on user roles
+const filterNavigationByRoles = (items: Fields[], userRoles: string[] | undefined): Fields[] => {
+  if (!items || items.length === 0) return [];
+  
+  console.log(items);
+
+  return items
+    .filter(item => hasRoleAccess(userRoles, item.Roles))
+    .map(item => ({
+      ...item,
+      Children: item.Children ? filterNavigationByRoles(item.Children, userRoles) : [],
+    }));
 };
 
 const getNavigationText = function (props: NavigationProps): JSX.Element | string {
@@ -50,6 +86,9 @@ const getLinkField = (props: NavigationProps): LinkField => ({
 export const Default = (props: NavigationProps): JSX.Element => {
   const [isOpenMenu, openMenu] = useState(false);
   const { sitecoreContext } = useSitecoreContext();
+  const { data: session } = useSession();
+  const userRoles = session?.user?.roles as string[] | undefined;
+  
   const styles =
     props.params != null
       ? `${props.params.GridParameters ?? ''} ${props?.params?.Styles ?? ''}`.trimEnd()
@@ -76,16 +115,23 @@ export const Default = (props: NavigationProps): JSX.Element => {
     openMenu(!isOpenMenu);
   };
 
-  const list = Object.values(props.fields)
-    .filter((element) => element)
-    .map((element: Fields, key: number) => (
-      <NavigationList
-        key={`${key}${element.Id}`}
-        fields={element}
-        handleClick={(event: React.MouseEvent<HTMLElement>) => handleToggleMenu(event, false)}
-        relativeLevel={1}
-      />
-    ));
+  // Filter navigation items based on user roles
+  // In editing mode, show all items regardless of roles
+  const filteredItems = sitecoreContext?.pageEditing 
+    ? Object.values(props.fields).filter(element => element)
+    : filterNavigationByRoles(
+        Object.values(props.fields).filter(element => element),
+        userRoles
+      );
+
+  const list = filteredItems.map((element: Fields, key: number) => (
+    <NavigationList
+      key={`${key}${element.Id}`}
+      fields={element}
+      handleClick={(event: React.MouseEvent<HTMLElement>) => handleToggleMenu(event, false)}
+      relativeLevel={1}
+    />
+  ));
 
   return (
     <div className={`component navigation ${styles}`} id={id ? id : undefined}>
@@ -109,6 +155,9 @@ export const Default = (props: NavigationProps): JSX.Element => {
 
 const NavigationList = (props: NavigationProps) => {
   const { sitecoreContext } = useSitecoreContext();
+  const { data: session } = useSession();
+  const userRoles = session?.user?.roles as string[] | undefined;
+  
   const [active, setActive] = useState(false);
   const classNameList = `${props?.fields?.Styles.concat('rel-level' + props.relativeLevel).join(
     ' '
@@ -116,7 +165,12 @@ const NavigationList = (props: NavigationProps) => {
 
   let children: JSX.Element[] = [];
   if (props.fields.Children && props.fields.Children.length) {
-    children = props.fields.Children.map((element: Fields, index: number) => (
+    // Filter children based on user roles in normal viewing mode
+    const filteredChildren = sitecoreContext?.pageEditing
+      ? props.fields.Children
+      : filterNavigationByRoles(props.fields.Children, userRoles);
+      
+    children = filteredChildren.map((element: Fields, index: number) => (
       <NavigationList
         key={`${index}${element.Id}`}
         fields={element}
