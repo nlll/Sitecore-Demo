@@ -28,7 +28,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
   const mainClassPageEditing = isPageEditing ? 'editing-mode' : 'prod-mode';
 
   console.log('Layout data:', layoutData);
-  console.log('Layout data:', layoutData.sitecore.route?.placeholders);
+  console.log('Layout placeholder:', layoutData.sitecore.route?.placeholders);
 
   return (
     <>
