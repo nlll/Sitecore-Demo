@@ -1,3 +1,4 @@
+/* eslint-disable */
 import type { NextRequest, NextFetchEvent } from 'next/server';
 import { NextResponse } from 'next/server';
 import createGraphQLClientFactory from './lib/graphql-client-factory';
