@@ -4,10 +4,15 @@ import { I18nProvider } from 'next-localization';
 import { SitecorePageProps } from 'lib/page-props';
 import Bootstrap from 'src/Bootstrap';
 import { SessionProvider } from "next-auth/react";
+import { Session } from 'next-auth';
 
 import 'assets/main.scss';
 
-function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element {
+interface ExtendedPageProps extends SitecorePageProps {
+  session?: Session | null;
+}
+
+function App({ Component, pageProps }: AppProps<ExtendedPageProps>): JSX.Element {
   const { dictionary, ...rest } = pageProps;
 
   return (

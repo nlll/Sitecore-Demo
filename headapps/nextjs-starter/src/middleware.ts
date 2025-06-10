@@ -1,10 +1,10 @@
 /* eslint-disable */
-import type { NextRequest, NextFetchEvent } from 'next/server';
+import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 import createGraphQLClientFactory from './lib/graphql-client-factory';
 import { getToken } from 'next-auth/jwt';
 
-export async function middleware(req: NextRequest, ev: NextFetchEvent) {
+export async function middleware(req: NextRequest) {
   try {
     if (req.nextUrl.pathname === '/401') {
       return NextResponse.next();
@@ -25,7 +25,6 @@ export async function middleware(req: NextRequest, ev: NextFetchEvent) {
     const userRoles = token?.roles || [];
     const userRole = Array.isArray(userRoles) ? userRoles[0] : userRoles;
     const homeQuery = process.env.SITECORE_GRAPHQL_HOME_QUERY || "/sitecore/content/demo/demo/Home";
-    const siteName = process.env.SITECORE_SITE_NAME || "demo";
 
     // Normalize path by removing trailing slash and replacing hyphens with spaces
     let path = homeQuery + req.nextUrl.pathname; 

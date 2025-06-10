@@ -14,7 +14,7 @@ import { sitecorePagePropsFactory } from 'lib/page-props-factory';
 import { componentBuilder } from 'temp/componentBuilder';
 import config from 'temp/config';
 import { sitemapFetcher } from 'lib/sitemap-fetcher';
-import { SessionProvider, useSession } from "next-auth/react"
+import { SessionProvider } from "next-auth/react"
 
 const SitecorePage = ({
   notFound,

@@ -24,7 +24,7 @@ interface Fields {
 }
 
 type NavigationProps = {
-  params?: { [key: string]: string };
+  params?: { [key: string]: string | number | boolean };
   fields: Fields;
   handleClick: (event?: React.MouseEvent<HTMLElement>) => void;
   relativeLevel: number;
@@ -269,8 +269,7 @@ const NavigationList = (props: NavigationProps) => {
       const isFirst = index === 0;
       const isLast = index === filteredChildren.length - 1;
       const isEven = index % 2 === 1;
-      const positionClass = `${isEven ? 'even' : 'odd'} ${isFirst ? 'first' : ''} ${isLast ? 'last' : ''}`;
-      
+
       return (
         <NavigationList
           key={`${index}${element.Id}`}
@@ -370,7 +369,7 @@ export const Default = (props: NavigationProps): JSX.Element => {
 
   if (!Object.values(props.fields).length) {
     return (
-      <div className={`component navigation ${styles}`} id={id ? id : undefined}>
+      <div className={`component navigation ${styles}`} id={typeof id === 'string' ? id : undefined}>
         <div className="component-content">[Navigation]</div>
       </div>
     );
@@ -424,7 +423,7 @@ export const Default = (props: NavigationProps): JSX.Element => {
   }
 
   return (
-    <div className={`component navigation ${navigationClass} ${styles}`} id={id ? id : undefined}>
+    <div className={`component navigation ${navigationClass} ${styles}`} id={typeof id === 'string' ? id : undefined}>
       <label className="menu-mobile-navigate-wrapper">
         <input
           type="checkbox"
