@@ -52,7 +52,7 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'feaas*.blob.core.windows.net',
         port: '',
-      },
+      }
     ]
   },
 

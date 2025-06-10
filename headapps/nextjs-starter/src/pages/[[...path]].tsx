@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useEffect } from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import NotFound from 'src/NotFound';
@@ -13,6 +14,7 @@ import { sitecorePagePropsFactory } from 'lib/page-props-factory';
 import { componentBuilder } from 'temp/componentBuilder';
 import config from 'temp/config';
 import { sitemapFetcher } from 'lib/sitemap-fetcher';
+import { SessionProvider } from "next-auth/react"
 
 const SitecorePage = ({
   notFound,
@@ -32,7 +34,8 @@ const SitecorePage = ({
 
   const isEditing = layoutData.sitecore.context.pageEditing;
 
-  return (
+return (
+  <SessionProvider>
     <ComponentPropsContext value={componentProps}>
       <SitecoreContext
         componentFactory={componentBuilder.getComponentFactory({ isEditing })}
@@ -47,6 +50,7 @@ const SitecorePage = ({
         <Layout layoutData={layoutData} headLinks={headLinks} />
       </SitecoreContext>
     </ComponentPropsContext>
+  </SessionProvider>
   );
 };
 
@@ -90,6 +94,8 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
 // revalidation (or fallback) is enabled and a new request comes in.
 export const getStaticProps: GetStaticProps = async (context) => {
   const props = await sitecorePagePropsFactory.create(context);
+
+  console.log("getStaticProps props:", props);
 
   return {
     props,
