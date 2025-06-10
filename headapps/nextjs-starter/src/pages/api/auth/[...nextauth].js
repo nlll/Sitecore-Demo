@@ -19,7 +19,7 @@ export default NextAuth({
             name: "Demo User",
             email: "user@example.com",
             image: "/avatar.png",
-            roles: ["user", "editor"],
+            roles: [],
           };
         }
 
@@ -29,7 +29,17 @@ export default NextAuth({
             name: "Admin User",
             email: "admin@example.com",
             image: "/avatar.png",
-            roles: ["admin"],
+            roles: ["Admin"],
+          };
+        }
+
+         if (credentials.username === "owner" && credentials.password === "owner") {
+          return {
+            id: "3",
+            name: "Company Owner",
+            email: "owner@example.com",
+            image: "/avatar.png",
+            roles: ["Company Owner", "Company Editor"],
           };
         }
 

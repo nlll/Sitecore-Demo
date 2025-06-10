@@ -53,6 +53,7 @@ export const Default = (props: PageContentProps): JSX.Element => {
                         <p>Please sign in to access the content</p>
                         <p>Admin: admin/admin</p>
                         <p>Test User: test/test</p>
+                        <p>Company Owner: owner/owner</p>
                         <form onSubmit={handleSubmit} className="login-form">
                             <div className="mb-3">
                                 <label htmlFor="username" className="form-label">Username</label>
