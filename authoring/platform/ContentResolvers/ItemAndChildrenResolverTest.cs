@@ -26,6 +26,7 @@ namespace XmCloudSXAStarter.RenderingContentResolvers
                 return null;
             }
 
+
             //initialize the JSON object to be returned with the datasourceItem details 
             JObject jobject = ProcessItem(datasourceItem, rendering, renderingConfig);
 
