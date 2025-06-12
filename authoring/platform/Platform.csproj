@@ -71,10 +71,10 @@
     <None Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Config\Include\" />
+    <Compile Include="ContentResolvers\ItemAndChildrenResolverTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContentResolvers\ItemAndChildrenResolverTest.cs" />
+    <Folder Include="App_Config\Include\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
