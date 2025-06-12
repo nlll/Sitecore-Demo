@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Sitecore.Media.config" />
+    <Content Include="App_Config\Include\ItemAndChildrenResolver.config" />
     <None Include="Platform.wpp.targets" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="README.md" />
