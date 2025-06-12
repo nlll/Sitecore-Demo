@@ -7,11 +7,11 @@ using Sitecore.Mvc.Presentation;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace XmCloudSXAStarter.RenderingContentResolvers
+namespace Test.RenderingContentResolvers
 {
-    public class ItemAndChildrenResolverTest : RenderingContentsResolver
+    public class Test : Sitecore.LayoutService.ItemRendering.ContentsResolvers.RenderingContentsResolver
     {
-        public override object ResolveContents(Rendering rendering, IRenderingConfiguration renderingConfig)
+        public override object ResolveContents(Sitecore.Mvc.Presentation.Rendering rendering, IRenderingConfiguration renderingConfig)
         {
             // Return a very simple object or null for testing
             return new { message = "Test Resolver Loaded Successfully from XmCloudNextJsStarter.dll" };
