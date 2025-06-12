@@ -1,15 +1,8 @@
 import React from 'react';
-import {
-  Field,
-  ImageField,
-  NextImage as JssImage,
-  LinkField,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+import { ImageField, NextImage as JssImage } from '@sitecore-jss/sitecore-jss-nextjs';
 
 interface Fields {
   Slides: ImageField & { metadata?: { [key: string]: unknown } };
-  ImageCaption: Field<string>;
-  TargetUrl: LinkField;
 }
 
 interface HeroSliderProps {
