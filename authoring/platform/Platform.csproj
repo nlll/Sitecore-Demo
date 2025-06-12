@@ -68,6 +68,7 @@
     <None Include="Platform.wpp.targets" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="README.md" />
+    <Content Include="Serialization\Project\Templates\demo.module.json" />
     <None Include="web.config" />
   </ItemGroup>
   <ItemGroup>

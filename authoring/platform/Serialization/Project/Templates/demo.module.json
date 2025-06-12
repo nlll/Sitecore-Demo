@@ -1,0 +1,12 @@
+{
+  "namespace": "Project.demo",
+  "items": {
+    "includes": [
+      {
+        "name": "demo-templates-project",
+        "path": "/sitecore/templates/Project/demo",
+        "scope": "itemAndDescendants"
+      }
+    ]
+  }
+}
