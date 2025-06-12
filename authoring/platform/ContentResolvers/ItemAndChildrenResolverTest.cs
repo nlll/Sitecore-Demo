@@ -51,6 +51,7 @@ namespace XmCloudSXAStarter.RenderingContentResolvers
                 return null;
             }
 
+
             JArray children = ProcessItems(itemList, rendering, renderingConfig);
 
             //then parse the list to get those children
