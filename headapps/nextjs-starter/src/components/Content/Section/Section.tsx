@@ -1,6 +1,7 @@
 import React from 'react';
 import { Field, Text, Placeholder } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentParams, ComponentRendering } from '@sitecore-jss/sitecore-jss-nextjs';
+import styles from './Section.module.scss';
 
 interface Fields {
   Heading: Field<string>;
@@ -15,8 +16,14 @@ interface SectionProps {
 export const Default = (props: SectionProps): JSX.Element => {
   return (
     <div className="container">
-      <Text field={props.fields.Heading} tag="h3" className="mt-100 mb-50" />
-      <Placeholder name="headless-section" rendering={props.rendering} />
+      <div className="row justify-content-center">
+        <div className="col-md-8">
+          <div className={styles.root}>
+            <Text field={props.fields.Heading} tag="h1" className={styles.title} />
+            <Placeholder name="headless-section" rendering={props.rendering} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,45 @@
+.root {
+    width: 100%; // Ensure the footer spans the full width
+    text-align: center;
+}
+
+.footerNav {
+    width: 100%; // Ensure the navigation spans the full width
+    padding: 48px 0;
+    background: #012169; // Keep the existing background color
+    color: white; // Keep the existing text color
+}
+
+.footerLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-bottom: 24px;
+}
+
+.separator {
+    padding: 8px;
+}
+
+.link {
+    color: inherit;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: #da291c; // Keep the hover color
+    }
+}
+
+.copyRight {
+    width: 100%; // Ensure the copyright section spans the full width
+    line-height: 65px;
+    height: 65px;
+    margin: 0 auto;
+    background: #fff; // Keep the existing background color
+    color: black; // Keep the existing text color
+}

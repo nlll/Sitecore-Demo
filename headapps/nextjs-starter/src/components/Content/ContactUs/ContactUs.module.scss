@@ -1,0 +1,50 @@
+.root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; // Center text alignment
+    background-color: #ffffff; // Optional: Set background color
+    padding: 50px;
+    width: 100%;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactUs {
+    width: 100%; // Adjust width if needed
+}
+
+.heading {
+    margin-bottom: 1rem; // Add spacing between heading and CTA
+    color: #da291c; // Set text color to match the design
+    font-size: 1.5rem; // Adjust font size
+    font-weight: bold; // Make text bold
+}
+
+.cta {
+    margin-top: 1rem; // Add spacing above the CTA
+}
+
+.link {
+    background-color: #012169; // Set button background color
+    color: #ffffff; // Set button text color
+    padding: 0.75rem 1.5rem; // Add padding for button size
+    border: none; // Remove border
+    border-radius: 4px; // Add rounded corners
+    text-transform: uppercase; // Make text uppercase
+    font-weight: bold; // Make text bold
+    font-size: 1rem; // Adjust font size
+    cursor: pointer; // Change cursor to pointer
+    text-decoration: none; // Remove underline
+    display: inline-block; // Ensure button-like appearance
+    transition: background-color 0.3s ease; // Add hover effect
+
+    &:hover {
+        background-color: #001a4d; // Darker shade for hover effect
+    }
+}
