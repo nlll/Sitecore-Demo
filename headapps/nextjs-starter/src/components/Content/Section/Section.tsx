@@ -15,13 +15,11 @@ interface SectionProps {
 
 export const Default = (props: SectionProps): JSX.Element => {
   return (
-    <div className="container">
+    <div className={styles.root}>
       <div className="row justify-content-center">
-        <div className="col-md-8">
-          <div className={styles.root}>
-            <Text field={props.fields.Heading} tag="h1" className={styles.title} />
-            <Placeholder name="headless-section" rendering={props.rendering} />
-          </div>
+        <div className="col-md-10">
+          <Text field={props.fields.Heading} tag="h1" className={styles.title} />
+          <Placeholder name="headless-section" rendering={props.rendering} />
         </div>
       </div>
     </div>

@@ -17,10 +17,12 @@ interface ContactUsProps {
 export const Default = (props: ContactUsProps): JSX.Element => {
   return (
     <div className={styles.root}>
-      <div className="row">
+      <div className="row justify-content-center">
         <div className={styles.inner}>
           <div className={styles.contactUs}>
-            <Text field={props.fields.heading} className={styles.heading} />
+            <div className={styles.heading}>
+              <Text field={props.fields.heading} className={styles.heading} />
+            </div>
             <div className={styles.cta}>
               <Link field={props.fields.callToAction} className={styles.link} />
             </div>

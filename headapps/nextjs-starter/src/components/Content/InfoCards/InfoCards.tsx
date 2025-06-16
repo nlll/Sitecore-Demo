@@ -43,18 +43,12 @@ const InfoCard = ({ fields }: InfoCardProps) => {
 export const Default = (props: InfoCardsProps): JSX.Element => {
   return (
     <div className={styles.root}>
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-md-8">
-            <div className={styles.cardList}>
-              {props.fields.infoCards &&
-                props.fields.infoCards.length > 0 &&
-                props.fields.infoCards.map((card, index) => (
-                  <InfoCard key={index} fields={card.fields} />
-                ))}
-            </div>
-          </div>
-        </div>
+      <div className={styles.cardList}>
+        {props.fields.infoCards &&
+          props.fields.infoCards.length > 0 &&
+          props.fields.infoCards.map((card, index) => (
+            <InfoCard key={index} fields={card.fields} />
+          ))}
       </div>
     </div>
   );
