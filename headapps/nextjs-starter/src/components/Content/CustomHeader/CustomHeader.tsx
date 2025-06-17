@@ -5,13 +5,27 @@ import {
   ImageField,
   Link,
   LinkField,
+  useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import styles from './Header.module.scss';
 import cx from 'classnames';
 
 type ResultsFieldLink = {
   field: {
-    link: LinkField;
+    link: {
+      value: {
+        href?: string;
+        className?: string;
+        class?: string;
+        title?: string;
+        target?: string;
+        text?: string;
+        anchor?: string;
+        querystring?: string;
+        linktype?: string;
+        id?: string;
+      };
+    };
   };
 };
 
@@ -38,6 +52,7 @@ const LOGO_ALT_TEXT = 'TireHub';
 
 export const Default = (props: CustomHeaderProps): JSX.Element => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { sitecoreContext } = useSitecoreContext();
 
   return (
     <header className={cx('container', styles.root)}>
@@ -58,11 +73,21 @@ export const Default = (props: CustomHeaderProps): JSX.Element => {
         <div className={cx(styles.primaryNav, { [styles.menuOpen]: menuOpen })}>
           <ul className={styles.primaryNavList}>
             {props.fields.data.datasource &&
-              props.fields.data.datasource.children.results.map((nav, index) => (
-                <li key={index} className={styles.primaryNavItem}>
-                  <Link field={nav.field.link} className={styles.primaryNavLink} />
-                </li>
-              ))}
+              props.fields.data.datasource.children.results.map((nav, index) => {
+                const linkId = nav.field.link?.value.id?.replace(/[{}]/g, '').toLowerCase();
+                const currentId = sitecoreContext?.itemId?.replace(/[{}]/g, '').toLowerCase();
+                const isActive = linkId === currentId;
+                return (
+                  <li
+                    key={index}
+                    className={cx(styles.primaryNavItem, {
+                      [styles.active]: isActive,
+                    })}
+                  >
+                    <Link field={nav.field.link} className={styles.primaryNavLink} />
+                  </li>
+                );
+              })}
           </ul>
           {props.fields.data.datasource?.cta && (
             <Link field={props.fields.data.datasource.cta.jsonValue} className={styles.ctaButton} />
