@@ -31,14 +31,13 @@ type SlideProps = {
 const Slide = ({ fields }: SlideProps) => {
   const Image = () => <JssImage field={fields.backgroundImage} className={styles.image} />;
 
-  console.log(fields.backgroundImage?.value);
   return (
     <div className={styles.slide}>
       <div className={styles.imageContainer}>
         <Image />
       </div>
       <div className={styles.content}>
-        <RichText field={fields.heading} tag="h3" className={styles.title} />
+        <RichText field={fields.heading} className={styles.title} />
         {fields.link && (
           <JssLink
             field={fields.link}
@@ -74,6 +73,7 @@ export const Default = (props: HeroSliderProps): JSX.Element => {
       autoPlay
       showDots
       infinite
+      ssr
     >
       {props.fields?.slides &&
         props.fields.slides?.length > 0 &&

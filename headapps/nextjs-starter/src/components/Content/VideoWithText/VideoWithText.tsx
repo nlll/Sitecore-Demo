@@ -16,20 +16,29 @@ interface VideoWithTextProps {
 }
 
 export const Default = (props: VideoWithTextProps): JSX.Element => {
-  const text = props.fields ? (
-    <RichText field={props.fields.text} tag="p" />
-  ) : (
-    <span className="is-empty-hint">Rich text</span>
-  );
+  const videoHref = props.fields?.videoUrl?.value?.href ?? '';
 
-  const videoUrl = props?.fields.videoUrl?.value.href || '';
+  const isVideoUrlValid = typeof videoHref === 'string' && videoHref.trim() !== '';
 
   return (
     <div className={styles.root}>
       <div className={styles.panel}>
-        <div className={cx(styles.textCol, styles.col)}>{text}</div>
+        <div className={cx(styles.textCol, styles.col)}>
+          <div className={styles.text}>
+            <RichText field={props.fields.text} />
+          </div>
+        </div>
         <div className={cx(styles.mediaCol, styles.col)}>
-          <iframe src={videoUrl} />
+          {isVideoUrlValid && (
+            <iframe
+              src={videoHref}
+              title="Video Content"
+              width="100%"
+              height="315"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          )}
         </div>
       </div>
     </div>
