@@ -1,0 +1,37 @@
+﻿---
+ID: "d31676cd-b3f3-40d3-a816-4c6e6644db8d"
+Parent: "165cebff-1831-42c0-aa39-eadd875c24d0"
+Template: "0f6e2aa4-fae6-4acc-bb74-576e2e0e7055"
+Path: /sitecore/content/demo/demo/Home/Admin Page Only
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{3A0092E1-D91F-4280-840D-FD4D0102521F}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250609T131445Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Admin Page Only
+    - ID: "878b67e3-cae2-4586-99a3-835c1dec4534"
+      Hint: AllowedRoles
+      Value: "{23D28919-6F6A-4B3E-9071-BEA2A02A2700}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "47e7ba41-a9ef-4d38-95dd-fe748d16b396"
+    - ID: "a52fd683-9a86-4d5d-a8dc-95db00370c7d"
+      Hint: Title
+      Value: Admin Page Only
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\lmacura@softserveinc.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250610T135709Z

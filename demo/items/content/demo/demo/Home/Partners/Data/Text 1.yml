@@ -1,0 +1,36 @@
+﻿---
+ID: "b8d2f68e-2b6c-4033-85f8-702b45692241"
+Parent: "14bf3bce-c163-4011-baac-2e6f1e688da9"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: /sitecore/content/demo/demo/Home/Partners/Data/Text 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250618T134356Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <img alt="" height="720" width="1280" src="-/media/AED87FD632684EB59AC24313425B4C01.ashx" />
+        <img alt="" height="486" style="width: 400px;    aspect-ratio: auto 400 / 55;    height: 55px;    aspect-ratio: auto 400 / 55;    margin-bottom: 20px;    margin-left: 20px;" width="2847" src="-/media/C8AF1EB3CE2A4465B293E461494268B0.ashx" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ac32902e-ed0e-495d-ba24-8f0b80432820"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250618T134953Z

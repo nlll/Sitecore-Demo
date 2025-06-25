@@ -1,0 +1,68 @@
+﻿---
+ID: "fd53d0af-78dd-4cb1-ab4f-e2ce9d77e2e7"
+Parent: "cd2b7c2d-e9af-4e31-8622-15be42c88f83"
+Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
+Path: /sitecore/content/demo/demo/Presentation/Partial Designs/TireHub Footer
+SharedFields:
+- ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
+  Hint: Signature
+  Value: "tirehub-footer"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{5A3AB5EA-B816-4F38-BEC4-BA47494453D8}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "688177c5-1cd8-4d38-b334-a69adfe4274c"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{72CBAFA1-B953-437E-A781-28FAB504BE0F}"
+              p:before="*"
+              s:ds="{E4CEEC90-CF3C-4389-8DE9-A5B6262E9AA4}"
+              s:id="{CAB46100-7B5D-4228-A8CD-C6411BCADFB1}"
+              s:par="CSSStyles&amp;DynamicPlaceholderId=2"
+              s:ph="headless-footer" />
+            <r
+              uid="{F41F4D35-FAC1-4505-97F3-F081D5715677}"
+              p:after="*[1=2]"
+              s:ds="{B127B101-0837-4682-9E63-0A5EB2690844}"
+              s:id="{3FD19186-A0F5-4A2E-8FDC-C7317FD3F3FE}"
+              s:par="CSSStyles&amp;DynamicPlaceholderId=1"
+              s:ph="headless-header" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250616T163100Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "596e7a59-5836-4d15-80f2-4bd8580f932c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250616T163449Z

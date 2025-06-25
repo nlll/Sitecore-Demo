@@ -1,0 +1,23 @@
+﻿---
+ID: "204129b8-5bd6-4047-ad20-0ee975361345"
+Parent: "49d5531c-8b4b-4a54-b140-8912d186f5a5"
+Template: "c28b97d2-1945-463c-acdb-d8973bacf4c7"
+Path: /sitecore/content/demo/demo/Data/Info Cards Folder
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250613T174103Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "03504311-1715-47aa-8127-ba4d8f09cf9a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250613T174103Z

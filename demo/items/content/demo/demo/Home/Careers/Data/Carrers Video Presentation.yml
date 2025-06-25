@@ -1,0 +1,46 @@
+﻿---
+ID: "6e6c14b0-cd00-4077-9483-20543c4d67c6"
+Parent: "36333040-1c9b-4560-aa64-7fd22498905f"
+Template: "fe842a92-3652-431f-bee0-55df0280023b"
+Path: /sitecore/content/demo/demo/Home/Careers/Data/Carrers Video Presentation
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0d7c09af-e8ca-458a-9471-bcb387ff24d4"
+      Hint: videoUrl
+      Value: |
+        <link linktype="external" url="https://www.youtube.com/embed/mqUObzLpFiE?si=XddM2cBKOxzJK3J2" anchor="" target="" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250617T155928Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "85587d6a-26ab-4397-8c88-45ded478304a"
+      Hint: text
+      Value: |
+        <h5>At TireHub, We Say YES</h5>
+        <p>Yes to ambition, growth, and the future we&rsquo;re building together. Whether you&rsquo;re driving our trucks, leading a team, or connecting with customers, you&rsquo;re part of how we&rsquo;re transforming how the tire meets the road for our customers and each other.</p>
+        <p>We believe careers don&rsquo;t follow a script. Some of our best stories started with someone simply saying Yes to something new, unexpected, and full of potential. That&rsquo;s why we invest in our people (we call them Hubbers) with opportunities to grow your career, a culture that lives its values, and benefits that support every part of life.</p>
+        <p>Wherever you want to begin, your next step could start with a simple Yes.</p>
+        <p><a class="button button-red" href="https://recruiting.ultipro.com/HAW1005HAWNE/JobBoard/fb14a429-ca54-48db-b7e0-0c5ea1ad056e/?q=&amp;o=postedDateDesc&amp;w=&amp;wc=&amp;we=&amp;wpst=" target="_blank" rel="noopener noreferrer" title="JOIN THE TEAM THAT SAYS YES">JOIN THE TEAM THAT SAYS YES</a></p>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a3728539-b8c3-4f85-a340-34145e9d505a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250617T160232Z

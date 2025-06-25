@@ -1,0 +1,74 @@
+﻿---
+ID: "2544447f-bb0a-41f1-86ed-631b82470053"
+Parent: "165cebff-1831-42c0-aa39-eadd875c24d0"
+Template: "0f6e2aa4-fae6-4acc-bb74-576e2e0e7055"
+Path: /sitecore/content/demo/demo/Home/Contact Us
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{2F7F60B7-C4E2-4A27-8C68-6E876EB6AF1F}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{F3F5D4F5-FCE7-459E-9216-556F08E491E8}"
+              p:before="*"
+              s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+              s:ph="headless-main" />
+            <r
+              uid="{66D3B02D-0AE3-413A-8620-B8C9758B978F}"
+              p:after="r[@uid='{F3F5D4F5-FCE7-459E-9216-556F08E491E8}']"
+              s:ds="local:/Data/Contact Us Section"
+              s:id="{D6B9F790-4C5A-4D0F-A770-B72D52C565B3}"
+              s:par="Heading=%24name"
+              s:ph="/headless-main/container-1" />
+            <r
+              uid="{F703E2C5-BA24-4612-ACD7-3467A9D42B46}"
+              p:after="*[1=2]"
+              s:ds="local:/Data/Text 1"
+              s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B5F62028C-9537-400C-8ACE-726C19BE6E51%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+              s:ph="/headless-main/container-1/headless-section-{66D3B02D-0AE3-413A-8620-B8C9758B978F}-0" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250617T122732Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Contact Us
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7d84476f-ad75-4ddf-949d-24a3e763deb0"
+    - ID: "a52fd683-9a86-4d5d-a8dc-95db00370c7d"
+      Hint: Title
+      Value: Contact Us
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250624T133823Z

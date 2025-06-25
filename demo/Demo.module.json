@@ -1,0 +1,37 @@
+{
+  "namespace": "Demo",
+  "items": {
+    "includes": [
+      {
+        "name": "content",
+        "path": "/sitecore/content/demo",
+        "scope": "ItemAndDescendants"
+      },
+      {
+        "name": "templates.project",
+        "path": "/sitecore/templates/Project",
+        "scope": "ItemAndDescendants"
+      },
+      {
+        "name": "layout.renderings",
+        "path": "/sitecore/layout/Renderings",
+        "scope": "ItemAndDescendants"
+      },
+      {
+        "name": "layout.layouts",
+        "path": "/sitecore/layout/Layouts",
+        "scope": "ItemAndDescendants"
+      },
+      {
+        "name": "media.project",
+        "path": "/sitecore/media library/Project",
+        "scope": "ItemAndDescendants"
+      },
+      {
+        "name": "settings.security.roles",
+        "path": "/sitecore/system/Settings/Security/Roles",
+        "scope": "ItemAndDescendants"
+      }
+    ]
+  }
+}

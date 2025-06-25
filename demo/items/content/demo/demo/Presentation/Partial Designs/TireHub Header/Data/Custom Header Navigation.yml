@@ -1,0 +1,35 @@
+﻿---
+ID: "44e4c32d-f8dd-40df-9d2e-8f398ee95821"
+Parent: "d6b427f5-8372-4371-9823-05f0b19f548f"
+Template: "234fe016-4d04-4706-a210-ef1caea5a745"
+Path: /sitecore/content/demo/demo/Presentation/Partial Designs/TireHub Header/Data/Custom Header Navigation
+SharedFields:
+- ID: "6e2d5afc-4bad-44bb-b5fe-b06cf73fa4fd"
+  Hint: logoLink
+  Value: |
+    <image mediaid="{5A7BA05C-5309-4612-8A90-0E055DE330D4}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "e791a3e6-23bb-48e0-b128-c44cd7a65b67"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0c0acf03-5503-47ca-b13c-14b2a669d62b"
+      Hint: cta
+      Value: |
+        <link text="Order Now" linktype="external" url="https://now.tirehub.com/" anchor="" target="" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250613T133832Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5492bb42-bdb2-4336-8b8b-9c902bdf174f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250613T193217Z

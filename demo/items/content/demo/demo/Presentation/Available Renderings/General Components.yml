@@ -1,0 +1,46 @@
+﻿---
+ID: "b2572b13-940d-40a7-a167-811ee8d55736"
+Parent: "d9515126-f910-40e1-b955-ae00a252d2b9"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: /sitecore/content/demo/demo/Presentation/Available Renderings/General Components
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Value: |
+    {F902BA71-71EF-4820-A0D5-9B34111F10BD}
+    {9E785D95-A6BE-4A21-88B8-FED7E31B91FD}
+    {D6B9F790-4C5A-4D0F-A770-B72D52C565B3}
+    {D5F20A57-9EC1-4C1E-8F10-2EED00AF2943}
+    {A22EA9C1-FDA3-43F6-B6ED-4A53E29C35A2}
+    {3FD19186-A0F5-4A2E-8FDC-C7317FD3F3FE}
+    {CAB46100-7B5D-4228-A8CD-C6411BCADFB1}
+    {4C28EA89-2283-438F-A819-35F6E8859EE8}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "f1a24b46-d85e-4a0f-a788-7a5125aa7bd5"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250611T115701Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "51c314fa-ca5b-4f61-b411-ac599ad80c07"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250619T144005Z

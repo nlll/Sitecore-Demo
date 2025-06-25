@@ -1,0 +1,55 @@
+﻿---
+ID: "467edda3-5555-4042-8648-e9c9922242d8"
+Parent: "0896a30f-4318-45f6-98f5-a2d790f2bf03"
+Template: "738e2c82-154d-42ef-91f2-b22276840e1a"
+Path: "/sitecore/content/demo/demo/Home/Newsroom/tirehub-broadens-premium"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{355EC218-6D57-4060-AD66-AC676F23F27A}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1e43c794-7bc4-46d9-9658-d31004237a5f"
+      Hint: Title
+      Value: TireHub Broadens Premium Portfolio by Adding Pirelli
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250619T142928Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: TireHub Broadens Premium Portfolio by Adding Pirelli
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f57074ab-c1ab-4389-99d4-e1686d5505b9"
+    - ID: "9d2095f4-0cd0-4135-9d43-81a6ec87bf05"
+      Hint: ReleaseDate
+      Value: 20250619T000000Z
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250619T165407Z
+    - ID: "db4d06bc-eaa7-40a5-bd6a-fc98f0480f14"
+      Hint: Heading
+      Value: TireHub Broadens Premium Portfolio by Adding Pirelli
+    - ID: "e4233c18-1643-496b-bd4c-b2ec78520613"
+      Hint: Description
+      Value: "<p>Strategic Partnership Drives Growth and New Opportunities for TireHub and Pirelli ATLANTA (January 14, 2025) &ndash; TireHub, the national tire distributor co-founded by The Goodyear Tire &amp; Rubber Company (Goodyear) and Bridgestone Americas Inc. (Bridgestone), will begin distributing Pirelli tires in early 2025. The addition of Pirelli, a global tire brand known for its cutting-edge technology, high-end production excellence and passion for innovation, further reinforces TireHub&rsquo;s position as the leading distributor of premium products with a broad range of top-performing tires available to dealers and retailers. &ldquo;Pirelli is a complementary strategic fit for TireHub. As a premium-focused distributor offering the [&hellip;]</p>"
+    - ID: "e527c94f-54e5-446e-860d-5fc15555795d"
+      Hint: Image
+      Value: |
+        <image mediaid="{6027137C-3B6C-48ED-A7E0-12D099ADDEA9}" />

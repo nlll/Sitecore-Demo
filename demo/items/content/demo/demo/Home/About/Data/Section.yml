@@ -1,0 +1,26 @@
+﻿---
+ID: "867453a3-1887-4ff0-b036-79035aa1ce9b"
+Parent: "7d910fb9-c754-4cb0-b4f2-ce91e841ca9f"
+Template: "aac02ace-cfcf-41c2-b278-059a4011b28c"
+Path: /sitecore/content/demo/demo/Home/About/Data/Section
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250617T155842Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d02b4542-61fb-41ed-a784-70579e4972f2"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250624T122021Z
+    - ID: "eef3cce5-6af2-4173-8bc4-fbb451eead9a"
+      Hint: Heading
+      Value: About Us

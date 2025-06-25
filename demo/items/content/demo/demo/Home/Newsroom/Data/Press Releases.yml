@@ -1,0 +1,26 @@
+﻿---
+ID: "b70931e0-d0fb-4a07-a2bc-9d535c36f3ad"
+Parent: "f3be0802-706b-4187-b63f-2d22a4d9fce2"
+Template: "aac02ace-cfcf-41c2-b278-059a4011b28c"
+Path: /sitecore/content/demo/demo/Home/Newsroom/Data/Press Releases
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250624T134131Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bbaeb802-4cb4-4bb3-ac2f-dbcb290f2f1d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250624T134131Z
+    - ID: "eef3cce5-6af2-4173-8bc4-fbb451eead9a"
+      Hint: Heading
+      Value: Press Releases

@@ -1,0 +1,23 @@
+﻿---
+ID: "007270e3-c35c-4e9d-a473-a2ac510b8f8c"
+Parent: "49d5531c-8b4b-4a54-b140-8912d186f5a5"
+Template: "559d37e1-691e-4b6c-838a-cb9088b71cd7"
+Path: /sitecore/content/demo/demo/Data/Heroes
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250612T172115Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d9a92570-d2e7-4ec4-b05d-29103d61a649"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250612T172115Z

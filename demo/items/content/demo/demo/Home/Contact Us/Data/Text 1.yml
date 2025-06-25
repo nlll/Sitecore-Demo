@@ -1,0 +1,61 @@
+﻿---
+ID: "206a5e74-d609-45d3-8ff9-ceb27d646c78"
+Parent: "727c14d0-9641-4449-9c22-7941f76021db"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: /sitecore/content/demo/demo/Home/Contact Us/Data/Text 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250618T134159Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <div class="col-md-12 wp-bp-content-width">
+        <div class="text mb-40">
+        We&rsquo;re ready to help you put drivers on tires they&rsquo;ll love.
+        Whether you&rsquo;re a dealer looking for Goodyear, Bridgestone or Toyo tires or a current customer looking for information about your service, we&rsquo;ve got your back. Pick the TireHub team you&rsquo;re looking for from the options below or send us a general question using our online form.
+        </div>
+        <div class="text mb-40">
+        <h5>Customer Service and Support</h5>
+        We&rsquo;re here to help any way you need us.
+        </div>
+        <h5>By Web:</h5>
+        <div class="text mb-40">
+        <a href="https://now.tirehub.com/registration">https://now.tirehub.com/registration</a>
+        <div class="text mb-40">Need help with your account? See the Order Online FAQs below.</div>
+        <h5></h5>
+        <h5>By Email:</h5>
+        <a href="mailto:ContactUs@TireHub.com">ContactUs@TireHub.com</a>
+        </div>
+        <h5>By Phone:</h5>
+        Monday &ndash; Friday: 7am &ndash; 8pm EST | Saturday: 7am &ndash; 4pm EST
+        <div class="text mb-40">English: (833) 847-3482 (TIRE-HUB)
+        Spanish: (866) 418-0682</div>
+        <h5>By Mail</h5>
+        1 Ravinia Drive, Suite 1300
+        Atlanta, GA 30346<br />
+        <br />
+        Looking for a distribution center? Find them by clicking <a href="/locations">here</a>.
+        </div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "884f84c9-2cff-4041-ae17-4087cba56f8d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250624T133803Z

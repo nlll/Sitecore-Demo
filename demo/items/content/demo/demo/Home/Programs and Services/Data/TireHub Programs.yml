@@ -1,0 +1,29 @@
+﻿---
+ID: "73bac4e9-475f-490f-9670-f50cf8be4671"
+Parent: "aacfed55-853d-48d6-87de-8e0d5e2b78cf"
+Template: "aac02ace-cfcf-41c2-b278-059a4011b28c"
+Path: /sitecore/content/demo/demo/Home/Programs and Services/Data/TireHub Programs
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250618T123039Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1a5cb2e8-0a16-41d9-9ba1-e35ba732d276"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250618T123123Z
+    - ID: "eef3cce5-6af2-4173-8bc4-fbb451eead9a"
+      Hint: Heading
+      Value: TireHub Programs

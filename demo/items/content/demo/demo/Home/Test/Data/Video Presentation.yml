@@ -1,0 +1,42 @@
+﻿---
+ID: "af4319dd-4c6f-4e7b-8ffa-693f91fc141c"
+Parent: "f2fb75f9-2fe9-4d71-9093-0f8594ff4f49"
+Template: "fe842a92-3652-431f-bee0-55df0280023b"
+Path: /sitecore/content/demo/demo/Home/Test/Data/Video Presentation
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0d7c09af-e8ca-458a-9471-bcb387ff24d4"
+      Hint: videoUrl
+      Value: |
+        <link linktype="external" url="https://www.youtube.com/embed/QH-xGEoj_-E" anchor="" target="" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250612T110748Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "85587d6a-26ab-4397-8c88-45ded478304a"
+      Hint: text
+      Value: |
+        <div class="ck-content"><p>TireHub is a national tire distributor that delivers to U.S. tire and automotive retailers the full passenger and light truck tire portfolios of Goodyear and Bridgestone. We’re out to set a new standard of excellence for tire distribution in the U.S., and we’ll do it by <strong>focusing on the needs of our dealers and their customers.&nbsp;</strong></p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2e8f8967-27d0-48a3-aae9-57b613119b43"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\lmacura@softserveinc.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250617T064610Z

@@ -1,0 +1,42 @@
+﻿---
+ID: "6e38573d-a604-4f50-bde3-eb0279d4c867"
+Parent: "007270e3-c35c-4e9d-a473-a2ac510b8f8c"
+Template: "b24656f4-bcce-4931-b7e9-99ca8a295475"
+Path: /sitecore/content/demo/demo/Data/Heroes/Products
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0a4d5bd8-af1f-474b-ab90-24c5fe60daa1"
+      Hint: backgroundImage
+      Value: |
+        <image mediaid="{B68BABAA-5D58-42BF-B916-1F289A877CB0}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250612T172231Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "db64e441-cb68-41b3-aa89-6b25478d0293"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250616T152730Z
+    - ID: "dedf9890-4567-4141-9881-781f056c389c"
+      Hint: link
+      Value: |
+        <link text="Products" linktype="external" url="https://www.tirehub.com/products/" anchor="" target="" />
+    - ID: "e82a5e91-842f-4e5b-81a5-8592d0ca9562"
+      Hint: heading
+      Value: Created for Tire Experts<br>by Tire Experts

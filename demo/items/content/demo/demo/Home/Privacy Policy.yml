@@ -1,0 +1,42 @@
+﻿---
+ID: "309e57ef-b15b-4517-ab3e-bcd2a9ec8152"
+Parent: "165cebff-1831-42c0-aa39-eadd875c24d0"
+Template: "0f6e2aa4-fae6-4acc-bb74-576e2e0e7055"
+Path: /sitecore/content/demo/demo/Home/Privacy Policy
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{88930FCB-7C7E-4A7C-B455-003274A84C1D}" />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250617T143400Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Privacy Policy
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6241fbde-d1e4-4b08-881c-da6700b501c1"
+    - ID: "a52fd683-9a86-4d5d-a8dc-95db00370c7d"
+      Hint: Title
+      Value: Privacy Policy
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250617T143400Z
