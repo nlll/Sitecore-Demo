@@ -23,6 +23,11 @@
         "scope": "ItemAndDescendants"
       },
       {
+        "name": "layout.placeholders",
+        "path": "/sitecore/layout/Placeholder Settings/Project",
+        "scope": "ItemAndDescendants"
+      },	  
+      {
         "name": "media.project",
         "path": "/sitecore/media library/Project",
         "scope": "ItemAndDescendants"
