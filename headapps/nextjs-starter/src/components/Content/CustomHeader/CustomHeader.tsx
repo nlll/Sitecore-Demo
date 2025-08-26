@@ -1,3 +1,4 @@
+// eslint-disable
 import React, { useState } from 'react';
 import {
   ComponentParams,
@@ -34,6 +35,8 @@ interface Fields {
     datasource: {
       logoLink: { jsonValue: ImageField };
       cta: { jsonValue: LinkField };
+      cta2: { jsonValue: LinkField };
+      icon: { jsonValue: ImageField };
       currentLocation?: string;
       children: {
         results: Array<ResultsFieldLink>;
@@ -73,7 +76,7 @@ export const Default = (props: CustomHeaderProps): JSX.Element => {
         <div className={cx(styles.primaryNav, { [styles.menuOpen]: menuOpen })}>
           <ul className={styles.primaryNavList}>
             {props.fields.data.datasource &&
-              props.fields.data.datasource.children.results.map((nav, index) => {
+              props.fields.data.datasource.children.results.slice(0, 6).map((nav, index) => {
                 const linkId = nav.field.link?.value.id?.replace(/[{}]/g, '').toLowerCase();
                 const currentId = sitecoreContext?.itemId?.replace(/[{}]/g, '').toLowerCase();
                 const isActive = linkId === currentId;
@@ -91,6 +94,9 @@ export const Default = (props: CustomHeaderProps): JSX.Element => {
           </ul>
           {props.fields.data.datasource?.cta && (
             <Link field={props.fields.data.datasource.cta.jsonValue} className={styles.ctaButton} />
+          )}
+          {props.fields.data.datasource?.cta2 && (
+            <Link field={props.fields.data.datasource.cta2.jsonValue} className={styles.ctaButton} />
           )}
         </div>
         <button
