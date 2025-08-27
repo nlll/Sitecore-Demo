@@ -1,4 +1,4 @@
-// eslint-disable
+/* eslint-disable*/
 import React, { useState } from 'react';
 import {
   ComponentParams,
@@ -35,8 +35,8 @@ interface Fields {
     datasource: {
       logoLink: { jsonValue: ImageField };
       cta: { jsonValue: LinkField };
-      cta2: { jsonValue: LinkField };
-      icon: { jsonValue: ImageField };
+      // cta2: { jsonValue: LinkField };
+      // icon: { jsonValue: ImageField };
       currentLocation?: string;
       children: {
         results: Array<ResultsFieldLink>;
@@ -56,7 +56,7 @@ const LOGO_ALT_TEXT = 'TireHub';
 export const Default = (props: CustomHeaderProps): JSX.Element => {
   const [menuOpen, setMenuOpen] = useState(false);
   const { sitecoreContext } = useSitecoreContext();
-
+console.log("CTA2:", props.fields.data.datasource);
   return (
     <header className={cx('container', styles.root)}>
       <nav className={styles.nav}>
@@ -92,12 +92,15 @@ export const Default = (props: CustomHeaderProps): JSX.Element => {
                 );
               })}
           </ul>
-          {props.fields.data.datasource?.cta && (
+          {props.fields.data.datasource.cta && (
             <Link field={props.fields.data.datasource.cta.jsonValue} className={styles.ctaButton} />
+            
           )}
-          {props.fields.data.datasource?.cta2 && (
+          {/* {props.fields.data.datasource.cta2 && (
+          
             <Link field={props.fields.data.datasource.cta2.jsonValue} className={styles.ctaButton} />
-          )}
+            
+          )} */}
         </div>
         <button
           className={cx(styles.menuToggle, {
