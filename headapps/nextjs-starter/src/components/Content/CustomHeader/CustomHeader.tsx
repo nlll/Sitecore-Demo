@@ -32,16 +32,16 @@ type ResultsFieldLink = {
 
 interface Fields {
   data: {
-    datasource: {
+   item:{
       logoLink: { jsonValue: ImageField };
       cta: { jsonValue: LinkField };
-      // cta2: { jsonValue: LinkField };
-      // icon: { jsonValue: ImageField };
+      cta2: { jsonValue: LinkField };
+      icon: { jsonValue: ImageField };
       currentLocation?: string;
       children: {
         results: Array<ResultsFieldLink>;
       };
-    };
+   }
   };
 }
 interface CustomHeaderProps {
@@ -56,14 +56,14 @@ const LOGO_ALT_TEXT = 'TireHub';
 export const Default = (props: CustomHeaderProps): JSX.Element => {
   const [menuOpen, setMenuOpen] = useState(false);
   const { sitecoreContext } = useSitecoreContext();
-console.log("CTA2:", props.fields.data.datasource);
+console.log("CTA:", props.fields.data.item.cta);
   return (
     <header className={cx('container', styles.root)}>
       <nav className={styles.nav}>
-        {props.fields.data.datasource?.logoLink ? (
+        {props.fields.data?.item.logoLink ? (
           <a href="/" className={styles.logoLink}>
             <img
-              src={props.fields.data.datasource.logoLink?.jsonValue.value?.src}
+              src={props.fields.data.item.logoLink?.jsonValue.value?.src}
               alt={LOGO_ALT_TEXT}
               className={styles.logo}
             />
@@ -75,8 +75,8 @@ console.log("CTA2:", props.fields.data.datasource);
         )}
         <div className={cx(styles.primaryNav, { [styles.menuOpen]: menuOpen })}>
           <ul className={styles.primaryNavList}>
-            {props.fields.data.datasource &&
-              props.fields.data.datasource.children.results.slice(0, 6).map((nav, index) => {
+            {props.fields.data &&
+              props.fields.data.item.children.results.slice(0, 6).map((nav, index) => {
                 const linkId = nav.field.link?.value.id?.replace(/[{}]/g, '').toLowerCase();
                 const currentId = sitecoreContext?.itemId?.replace(/[{}]/g, '').toLowerCase();
                 const isActive = linkId === currentId;
@@ -92,15 +92,15 @@ console.log("CTA2:", props.fields.data.datasource);
                 );
               })}
           </ul>
-          {props.fields.data.datasource.cta && (
-            <Link field={props.fields.data.datasource.cta.jsonValue} className={styles.ctaButton} />
+          {props.fields.data.item.cta && (
+            <Link field={props.fields.data.item.cta.jsonValue} className={styles.ctaButton} />
             
           )}
-          {/* {props.fields.data.datasource.cta2 && (
+          {props.fields.data.item.cta2 && (
           
-            <Link field={props.fields.data.datasource.cta2.jsonValue} className={styles.ctaButton} />
+            <Link field={props.fields.data.item.cta2.jsonValue} className={styles.ctaButton} />
             
-          )} */}
+          )}
         </div>
         <button
           className={cx(styles.menuToggle, {
