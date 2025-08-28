@@ -101,6 +101,19 @@ console.log("CTA:", props.fields.data.item.cta);
             <Link field={props.fields.data.item.cta2.jsonValue} className={styles.ctaButton} />
             
           )}
+                 {props.fields.data?.item.icon ? (
+          <a href="/" className={styles.logoLink}>
+            <img
+              src={props.fields.data.item.icon?.jsonValue.value?.src}
+              alt={LOGO_ALT_TEXT}
+              className={styles.logo}
+            />
+          </a>
+        ) : (
+          <a href="/" className={styles.logoLink}>
+            <img src={LOGO_IMAGE_SRC} alt={LOGO_ALT_TEXT} className={styles.logo} />
+          </a>
+        )}
         </div>
         <button
           className={cx(styles.menuToggle, {
