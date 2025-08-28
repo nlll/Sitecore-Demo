@@ -36,7 +36,7 @@ interface Fields {
       logoLink: { jsonValue: ImageField };
       cta: { jsonValue: LinkField };
       cta2: { jsonValue: LinkField };
-      icon: { jsonValue: ImageField };
+      icon_47d42368fcba4b25b2b8e41739b2d2ac: { jsonValue: ImageField };
       currentLocation?: string;
       children: {
         results: Array<ResultsFieldLink>;
@@ -54,9 +54,8 @@ const LOGO_IMAGE_SRC = '/TireHub_Logo.png';
 const LOGO_ALT_TEXT = 'TireHub';
 
 export const Default = (props: CustomHeaderProps): JSX.Element => {
-  const [menuOpen, setMenuOpen] = useState(false);
   const { sitecoreContext } = useSitecoreContext();
-console.log("CTA:", props.fields.data.item.cta);
+console.log("CTA:", props.fields.data.item);
   return (
     <header className={cx('container', styles.root)}>
       <nav className={styles.nav}>
@@ -73,7 +72,7 @@ console.log("CTA:", props.fields.data.item.cta);
             <img src={LOGO_IMAGE_SRC} alt={LOGO_ALT_TEXT} className={styles.logo} />
           </a>
         )}
-        <div className={cx(styles.primaryNav, { [styles.menuOpen]: menuOpen })}>
+        <div className={cx(styles.primaryNav)}>
           <ul className={styles.primaryNavList}>
             {props.fields.data &&
               props.fields.data.item.children.results.slice(0, 6).map((nav, index) => {
@@ -92,40 +91,33 @@ console.log("CTA:", props.fields.data.item.cta);
                 );
               })}
           </ul>
+
+        </div>
+        <div className={styles.navContainer}>
+ {props.fields.data?.item.icon_47d42368fcba4b25b2b8e41739b2d2ac ? (
+          <a href="/" className={""}>
+            <img
+              src={props.fields.data.item.icon_47d42368fcba4b25b2b8e41739b2d2ac.jsonValue.value?.src}
+              alt={LOGO_ALT_TEXT}
+              className={styles.iconSign}
+            />
+          </a>
+        ) : (
+          <a href="/" className={""}>
+            <img src={LOGO_IMAGE_SRC} alt={LOGO_ALT_TEXT} className={styles.iconSign} />
+          </a>
+        )}
           {props.fields.data.item.cta && (
             <Link field={props.fields.data.item.cta.jsonValue} className={styles.ctaButton} />
             
           )}
+         
           {props.fields.data.item.cta2 && (
           
             <Link field={props.fields.data.item.cta2.jsonValue} className={styles.ctaButton} />
             
           )}
-                 {props.fields.data?.item.icon ? (
-          <a href="/" className={styles.logoLink}>
-            <img
-              src={props.fields.data.item.icon?.jsonValue.value?.src}
-              alt={LOGO_ALT_TEXT}
-              className={styles.logo}
-            />
-          </a>
-        ) : (
-          <a href="/" className={styles.logoLink}>
-            <img src={LOGO_IMAGE_SRC} alt={LOGO_ALT_TEXT} className={styles.logo} />
-          </a>
-        )}
-        </div>
-        <button
-          className={cx(styles.menuToggle, {
-            [styles.menuOpen]: menuOpen,
-          })}
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          <span className={styles.burgerIcon}></span>
-          <span className={styles.burgerIcon}></span>
-          <span className={styles.burgerIcon}></span>
-        </button>
+          </div>
       </nav>
     </header>
   );

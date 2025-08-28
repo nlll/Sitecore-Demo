@@ -2,6 +2,9 @@
     background-color: white;
     display: flex;
     justify-content: space-between;
+    border: 2px solid #f9f8f888; 
+  border-radius: 50px;      /* makes edges rounded */
+  padding: 20px;
 
     @media screen and (width > 992px) {
         justify-content: center;
@@ -22,6 +25,48 @@
         width: 260px;
     }
 }
+// .iconSign {
+// @media (min-width: 1024px) {
+//   .lg\:block {
+//     display: inline-block;
+    
+//   }
+//   width: 20px;   /* increase size */
+//   height: 20px;
+//   margin-left: 80px;   /* space after header text */
+//   margin-top:15px;
+// }
+// }
+
+// .iconSign {
+//   width: 20px;
+//   height: 20px;
+
+// }
+
+// @media (min-width: 1024px) {
+//   .iconSign {
+//     width: 20px;
+//     height: 20px;
+   
+//   }
+// }
+.navContainer {
+margin-left: auto; /* pushes the div to the right inside a flex container */
+  display: flex;
+  gap: 12px;         /* puts children in a row */
+ 
+ 
+}
+
+
+.iconSign {
+  width: 20px;
+  height: 20px;
+  margin-left: 80px;
+  margin-top: 10px;
+}
+
 
 .nav {
     display: flex;
@@ -47,9 +92,6 @@
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
 
-    &.menuOpen {
-        transform: translateX(0);
-    }
 
     @media screen and (width > 992px) {
         position: relative;
@@ -118,8 +160,8 @@
     justify-content: center;
     font-size: 15px;
     color: #0e62f2;
-    // background: #012169;
-    padding: 15px;
+    
+    // padding: 15px;
     text-decoration: none;
     align-self: stretch;
     white-space: nowrap;
@@ -138,57 +180,5 @@
     @media screen and (width > 992px) {
         margin: 0 0 0 20px;
         min-width: auto;
-    }
-}
-
-.menuToggle {
-    // reset button styles
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 1001;
-
-    @media screen and (width > 992px) {
-        display: none;
-    }
-}
-
-.burgerIcon {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #da291c;
-    border-radius: 3px;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        opacity 0.55s ease;
-
-    &:nth-child(3) {
-        transform-origin: 0% 100%;
-    }
-
-    .menuOpen & {
-        opacity: 1;
-        transform: rotate(45deg) translate(-2px, -1px);
-        background: #232323;
-
-        &:first-child {
-            opacity: 1;
-            transform: rotate(45deg) translate(-2px, -1px);
-            background: #232323;
-        }
-
-        &:nth-child(2) {
-            opacity: 0;
-            transform: rotate(0deg) scale(0.2, 0.2);
-        }
-
-        &:nth-child(3) {
-            transform: rotate(-45deg) translate(0, -1px);
-        }
     }
 }
