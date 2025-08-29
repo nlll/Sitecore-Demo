@@ -1,62 +1,39 @@
 .root {
     background-color: white;
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid #f9f8f888; 
-  border-radius: 50px;      /* makes edges rounded */
-  padding: 20px;
-
+    display: flex; 
+    padding: 20px;
+    // border: 2px solid #f9f8f888; 
+    // border-radius: 50px;      /* makes edges rounded */
+    // box-sizing: content-box;
+    // width: 100%;
+   
     @media screen and (width > 992px) {
-        justify-content: center;
+       // justify-content: center;
     }
 }
 
 .logoLink {
-    display: inline-block;
+   // display: inline-block;
+   justify-content: flex-start;
 }
 
 .logo {
     
   height: 50px;          
   max-width: 100px;  
-  display: inline-block;
+ // display: inline-block;
+  justify-content:flex-start ;
 
     @media screen and (width > 992px) {
         width: 260px;
     }
 }
-// .iconSign {
-// @media (min-width: 1024px) {
-//   .lg\:block {
-//     display: inline-block;
-    
-//   }
-//   width: 20px;   /* increase size */
-//   height: 20px;
-//   margin-left: 80px;   /* space after header text */
-//   margin-top:15px;
-// }
-// }
-
-// .iconSign {
-//   width: 20px;
-//   height: 20px;
-
-// }
-
-// @media (min-width: 1024px) {
-//   .iconSign {
-//     width: 20px;
-//     height: 20px;
-   
-//   }
-// }
+ 
 .navContainer {
-margin-left: auto; /* pushes the div to the right inside a flex container */
-  display: flex;
-  gap: 12px;         /* puts children in a row */
- 
- 
+// margin-left: auto;  /* pushes this div all the way to the right */ 
+// align-items: center; 
+ display: flex;      
+ justify-content: flex-end; 
 }
 
 
@@ -71,26 +48,29 @@ margin-left: auto; /* pushes the div to the right inside a flex container */
 .nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex: 1 1 100%;
+    // align-items: center;
+    // flex: 1 1 100%;
 
     @media screen and (width > 992px) {
         gap: 20px;
-        justify-content: center;
+      //  justify-content: center;
 
     }
 }
 
 .primaryNav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100lvh;
-    z-index: 1000;
+    display: flex;
+    justify-content: flex-start;
     background-color: white;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+    // height: 100lvh;
+    // z-index: 1000;
+    //  margin-right: auto;  /* pushes this div all the way to the left */
+    // transform: translateX(-100%);
+    // transition: transform 0.3s ease-in-out;
 
 
     @media screen and (width > 992px) {
@@ -104,16 +84,18 @@ margin-left: auto; /* pushes the div to the right inside a flex container */
 
 .primaryNavList {
     list-style: none;
-    text-align: center;
     margin-top: 70px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
+
+    // text-align: center;
+   // flex-direction: column;
+   // align-items: center;
 
     @media screen and (width > 992px) {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 10px;
         margin: 0;
     }
@@ -121,7 +103,7 @@ margin-left: auto; /* pushes the div to the right inside a flex container */
 
 .primaryNavItem {
     margin: 5px 0 0;
-
+    justify-content: flex-start;
     // &.active {
     //     color: red;
     //     border-bottom: 3px solid #da291c;

@@ -1,5 +1,4 @@
 /* eslint-disable*/
-import React, { useState } from 'react';
 import {
   ComponentParams,
   ComponentRendering,
@@ -59,7 +58,8 @@ console.log("CTA:", props.fields.data.item);
   return (
     <header className={cx('container', styles.root)}>
       <nav className={styles.nav}>
-        {props.fields.data?.item.logoLink ? (
+        <div className={cx(styles.primaryNav)}>
+           {props.fields.data?.item.logoLink ? (
           <a href="/" className={styles.logoLink}>
             <img
               src={props.fields.data.item.logoLink?.jsonValue.value?.src}
@@ -72,7 +72,6 @@ console.log("CTA:", props.fields.data.item);
             <img src={LOGO_IMAGE_SRC} alt={LOGO_ALT_TEXT} className={styles.logo} />
           </a>
         )}
-        <div className={cx(styles.primaryNav)}>
           <ul className={styles.primaryNavList}>
             {props.fields.data &&
               props.fields.data.item.children.results.slice(0, 6).map((nav, index) => {
@@ -94,7 +93,7 @@ console.log("CTA:", props.fields.data.item);
 
         </div>
         <div className={styles.navContainer}>
- {props.fields.data?.item.icon_47d42368fcba4b25b2b8e41739b2d2ac ? (
+          {props.fields.data?.item.icon_47d42368fcba4b25b2b8e41739b2d2ac ? (
           <a href="/" className={""}>
             <img
               src={props.fields.data.item.icon_47d42368fcba4b25b2b8e41739b2d2ac.jsonValue.value?.src}
@@ -111,7 +110,7 @@ console.log("CTA:", props.fields.data.item);
             <Link field={props.fields.data.item.cta.jsonValue} className={styles.ctaButton} />
             
           )}
-         
+          
           {props.fields.data.item.cta2 && (
           
             <Link field={props.fields.data.item.cta2.jsonValue} className={styles.ctaButton} />
