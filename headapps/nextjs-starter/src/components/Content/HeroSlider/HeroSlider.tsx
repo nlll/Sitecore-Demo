@@ -1,3 +1,4 @@
+/* eslint-disable*/
 import React from 'react';
 import {
   ImageField,
@@ -6,78 +7,51 @@ import {
   Link as JssLink,
   LinkField,
   Field,
+  Text,
+  ComponentParams,
+  ComponentRendering,
+  useSitecoreContext,
+  TextField
 } from '@sitecore-jss/sitecore-jss-nextjs';
-import Carousel from 'react-multi-carousel';
+
 import styles from './HeroSlider.module.scss';
 import 'react-multi-carousel/lib/styles.css';
-
-interface Fields {
-  slides?: SlideProps[];
+interface CustomSliderProps {
+  rendering: ComponentRendering & { params: ComponentParams };
+  params: ComponentParams;
+  fields: HeroProps;
 }
 
-interface HeroSliderProps {
-  params: { [key: string]: string };
-  fields: Fields;
+interface HeroProps {
+      backgroundImage: ImageField;
+      link:  LinkField ;
+      subHeading?: TextField;
+      heading?: TextField
 }
-
-type SlideProps = {
-  fields: {
-    backgroundImage?: ImageField;
-    heading?: Field<string>;
-    link?: LinkField;
-  };
-};
-
-const Slide = ({ fields }: SlideProps) => {
-  const Image = () => <JssImage field={fields.backgroundImage} className={styles.image} />;
-
+ 
+export const Default = (props: CustomSliderProps) : JSX.Element=> {
+ 
+  const Image = () => <JssImage field={props.fields.backgroundImage} className={styles.image} />;
+  console.log('FIELDS', props.fields.backgroundImage);
   return (
-    <div className={styles.slide}>
-      <div className={styles.imageContainer}>
-        <Image />
+    
+  //  <div className={styles.slide}>
+      <section className={styles.imageContainer}>
+      <div className={styles.image}>
+          <Image/>
       </div>
       <div className={styles.content}>
-        <RichText field={fields.heading} className={styles.title} />
-        {fields.link && (
+       <h2><Text field={props.fields.heading} className={styles.title} /></h2> 
+        <p><Text field={props.fields.subHeading} className={styles.title} /></p>
+        {props.fields.link && (
           <JssLink
-            field={fields.link}
-            href={fields.link.value.href}
-            title={fields.link.value.text}
+            field={props.fields.link}
+            href={props.fields.link.value.href}
+            title={props.fields.link.value.text}
             className={styles.link}
           />
         )}
       </div>
-    </div>
-  );
-};
-
-export const Default = (props: HeroSliderProps): JSX.Element => {
-  JSON.stringify(props, null, 2);
-  return (
-    <Carousel
-      className={styles.carousel}
-      autoPlaySpeed={3000}
-      arrows={false}
-      dotListClass={styles.dotList}
-      minimumTouchDrag={25}
-      slidesToSlide={1}
-      responsive={{
-        desktop: {
-          breakpoint: { max: Infinity, min: 0 },
-          items: 1,
-          slidesToSlide: 1,
-        },
-      }}
-      shouldResetAutoplay
-      pauseOnHover
-      autoPlay
-      showDots
-      infinite
-      ssr
-    >
-      {props.fields?.slides &&
-        props.fields.slides?.length > 0 &&
-        props.fields.slides.map((slide, index) => <Slide key={index} fields={slide.fields} />)}
-    </Carousel>
+   // </section>
   );
 };
