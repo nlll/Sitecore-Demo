@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/* eslint-disable*/
 import {
   ComponentParams,
   ComponentRendering,
@@ -31,14 +31,16 @@ type ResultsFieldLink = {
 
 interface Fields {
   data: {
-    datasource: {
+   item:{
       logoLink: { jsonValue: ImageField };
       cta: { jsonValue: LinkField };
+      cta2: { jsonValue: LinkField };
+      icon_47d42368fcba4b25b2b8e41739b2d2ac: { jsonValue: ImageField };
       currentLocation?: string;
       children: {
         results: Array<ResultsFieldLink>;
       };
-    };
+   }
   };
 }
 interface CustomHeaderProps {
@@ -50,17 +52,37 @@ interface CustomHeaderProps {
 const LOGO_IMAGE_SRC = '/TireHub_Logo.png';
 const LOGO_ALT_TEXT = 'TireHub';
 
+
 export const Default = (props: CustomHeaderProps): JSX.Element => {
-  const [menuOpen, setMenuOpen] = useState(false);
   const { sitecoreContext } = useSitecoreContext();
 
   return (
-    <header className={cx('container', styles.root)}>
-      <nav className={styles.nav}>
-        {props.fields.data.datasource?.logoLink ? (
+    <header  className={cx('container', styles.root)}>
+      <div className={styles.languageContainer}>
+         <span className={styles.iconSignLanguage}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="icon-size"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
+            />
+          </svg>
+        </span>
+         <span className={styles.languageText}>ENGLISH [US]</span>
+      </div>
+      <nav className={styles.nav}>  
+        <div className={cx(styles.primaryNav)}>
+           {props.fields.data?.item.logoLink ? (
           <a href="/" className={styles.logoLink}>
             <img
-              src={props.fields.data.datasource.logoLink?.jsonValue.value?.src}
+              src={props.fields.data.item.logoLink?.jsonValue.value?.src}
               alt={LOGO_ALT_TEXT}
               className={styles.logo}
             />
@@ -70,10 +92,9 @@ export const Default = (props: CustomHeaderProps): JSX.Element => {
             <img src={LOGO_IMAGE_SRC} alt={LOGO_ALT_TEXT} className={styles.logo} />
           </a>
         )}
-        <div className={cx(styles.primaryNav, { [styles.menuOpen]: menuOpen })}>
           <ul className={styles.primaryNavList}>
-            {props.fields.data.datasource &&
-              props.fields.data.datasource.children.results.map((nav, index) => {
+            {props.fields.data &&
+              props.fields.data.item.children.results.slice(0, 6).map((nav, index) => {
                 const linkId = nav.field.link?.value.id?.replace(/[{}]/g, '').toLowerCase();
                 const currentId = sitecoreContext?.itemId?.replace(/[{}]/g, '').toLowerCase();
                 const isActive = linkId === currentId;
@@ -89,21 +110,29 @@ export const Default = (props: CustomHeaderProps): JSX.Element => {
                 );
               })}
           </ul>
-          {props.fields.data.datasource?.cta && (
-            <Link field={props.fields.data.datasource.cta.jsonValue} className={styles.ctaButton} />
-          )}
+
         </div>
-        <button
-          className={cx(styles.menuToggle, {
-            [styles.menuOpen]: menuOpen,
-          })}
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          <span className={styles.burgerIcon}></span>
-          <span className={styles.burgerIcon}></span>
-          <span className={styles.burgerIcon}></span>
-        </button>
+        <div className={styles.navContainer}>
+          {props.fields.data?.item.icon_47d42368fcba4b25b2b8e41739b2d2ac ? (
+          <a href="/" className={""}>
+            <img
+              src={props.fields.data.item.icon_47d42368fcba4b25b2b8e41739b2d2ac.jsonValue.value?.src}
+              alt={LOGO_ALT_TEXT}
+              className={styles.iconSign}
+            />
+          </a>
+        ) : (
+          <a href="/" className={""}>
+            <img src={LOGO_IMAGE_SRC} alt={LOGO_ALT_TEXT} className={styles.iconSign} />
+          </a>
+        )}
+          {props.fields.data.item.cta && (
+            <Link field={props.fields.data.item.cta.jsonValue} className={styles.ctaButton} />
+          )}
+          {props.fields.data.item.cta2 && (
+            <Link field={props.fields.data.item.cta2.jsonValue} className={styles.ctaButton} />
+          )}
+          </div>
       </nav>
     </header>
   );
