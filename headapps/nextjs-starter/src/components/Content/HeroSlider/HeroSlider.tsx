@@ -26,7 +26,9 @@ interface HeroProps {
       backgroundImage: ImageField;
       link:  LinkField ;
       subHeading?: TextField;
-      heading?: TextField
+      heading?: TextField;
+      headingLine? : TextField;
+      subHeadingLine? : TextField;
 }
  
 export const Default = (props: CustomSliderProps) : JSX.Element=> {
@@ -40,7 +42,9 @@ export const Default = (props: CustomSliderProps) : JSX.Element=> {
       </div>
       <div className={styles.content}>
        <h1><Text field={props.fields.heading} className={styles.title} /></h1> 
+        <h1><Text field={props.fields.headingLine} className={styles.title} /></h1> 
         <div><Text field={props.fields.subHeading} className={styles.titleParagraph} /></div>
+         <div><Text field={props.fields.subHeadingLine} className={styles.titleParagraph} /></div>
         {props.fields.link && (
           <JssLink
             field={props.fields.link}
