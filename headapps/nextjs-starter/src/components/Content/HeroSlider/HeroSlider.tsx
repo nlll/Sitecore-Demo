@@ -34,15 +34,13 @@ export const Default = (props: CustomSliderProps) : JSX.Element=> {
   const Image = () => <JssImage field={props.fields.backgroundImage} className={styles.image} />;
   console.log('FIELDS', props.fields.backgroundImage);
   return (
-    
-  //  <div className={styles.slide}>
       <section className={styles.imageContainer}>
       <div className={styles.image}>
           <Image/>
       </div>
       <div className={styles.content}>
-       <h2><Text field={props.fields.heading} className={styles.title} /></h2> 
-        <p><Text field={props.fields.subHeading} className={styles.title} /></p>
+       <h1><Text field={props.fields.heading} className={styles.title} /></h1> 
+        <div><Text field={props.fields.subHeading} className={styles.titleParagraph} /></div>
         {props.fields.link && (
           <JssLink
             field={props.fields.link}
