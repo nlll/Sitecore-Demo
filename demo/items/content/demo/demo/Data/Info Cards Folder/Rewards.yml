@@ -2,7 +2,7 @@
 ID: "1f53d8b9-d656-4754-9bb6-d6bce999e85e"
 Parent: "204129b8-5bd6-4047-ad20-0ee975361345"
 Template: "0f6a39cf-7123-49c6-8965-ad5ecd683f7a"
-Path: /sitecore/content/demo/demo/Data/Info Cards Folder/TireHub Leadership
+Path: /sitecore/content/demo/demo/Data/Info Cards Folder/Rewards
 Languages:
 - Language: en
   Versions:
@@ -10,7 +10,7 @@ Languages:
     Fields:
     - ID: "03271064-4829-4392-bcd6-2a6d0d7a102b"
       Hint: heading
-      Value: TireHub Leadership
+      Value: Treat Yourself. Then Reward Yourself.
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20250613T174126Z
@@ -25,21 +25,21 @@ Languages:
     - ID: "72e349bc-6bc2-4c00-83a6-f454e0cbea30"
       Hint: image
       Value: |
-        <image mediaid="{C1595299-0A11-4E4D-B746-96B1658A4A36}" />
+        <image mediaid="{2A17EDE8-6394-43FB-9F8B-2A88E2E74059}" />
     - ID: "892808a8-fedc-4647-a9c3-771dbd9af09e"
       Hint: description
-      Value: A passion for serving tire dealers and a history of supply chain excellence.
+      Value: "The only thing sweeter than our soft serve are the DQ® Points you earn on every purchase. Redeem them for Blizzard® Treats, burgers and more!"
     - ID: "894cd40a-a13d-4c2b-bef9-3f962fdd6976"
       Hint: link
       Value: |
-        <link text="Learn More" anchor="" linktype="internal" class="" title="" target="|Custom" querystring="" id="{165CEBFF-1831-42C0-AA39-EADD875C24D0}" />
+        <link text="Get the App &gt;" linktype="external" url="https://www.dairyqueen.com/en-us/rewards/" anchor="" target="|Custom" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b43a30e5-930c-4a2a-8bd0-d4c8dfd9be5c"
+      Value: "879126e7-8baf-4bd5-a8fe-771676d349d5"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\yseme2@softserveinc.com
+        sitecore\aivanova@softserveinc.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250613T174954Z
+      Value: 20250902T142521Z

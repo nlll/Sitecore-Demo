@@ -1,8 +1,8 @@
 ﻿---
-ID: "4982afe9-0097-424a-a3dc-8078e3e5f2d3"
+ID: "2c883fbe-c5ff-422f-b54a-9146a6f52521"
 Parent: "204129b8-5bd6-4047-ad20-0ee975361345"
 Template: "0f6a39cf-7123-49c6-8965-ad5ecd683f7a"
-Path: /sitecore/content/demo/demo/Data/Info Cards Folder/TireHub Mission
+Path: /sitecore/content/demo/demo/Data/Info Cards Folder/Shakes
 Languages:
 - Language: en
   Versions:
@@ -10,10 +10,10 @@ Languages:
     Fields:
     - ID: "03271064-4829-4392-bcd6-2a6d0d7a102b"
       Hint: heading
-      Value: TireHub Mission
+      Value: "New! Maple Cookie Shake"
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20250613T174120Z
+      Value: 20250613T174132Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -25,21 +25,21 @@ Languages:
     - ID: "72e349bc-6bc2-4c00-83a6-f454e0cbea30"
       Hint: image
       Value: |
-        <image mediaid="{2D1063FF-12EB-4282-88D2-9840D6C89422}" />
+        <image mediaid="{F9AA8A30-D3E9-4DCD-92DF-15F41B87CA7D}" />
     - ID: "892808a8-fedc-4647-a9c3-771dbd9af09e"
       Hint: description
-      Value: Our mission is to distribute the highest quality products possible so our customers  can put their customers on tires they’ll love.
+      Value: "The DQ® fall treat menu is here! The all-new Maple Cookie Shake is available for a limited time only. Enjoy this sweet treat before it’s gone."
     - ID: "894cd40a-a13d-4c2b-bef9-3f962fdd6976"
       Hint: link
       Value: |
-        <link text="Learn More" anchor="" linktype="internal" class="" title="" target="|Custom" querystring="" id="{165CEBFF-1831-42C0-AA39-EADD875C24D0}" />
+        <link text="Order Now &gt;" linktype="external" url="https://www.dairyqueen.com/en-us/order/" anchor="" target="" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "7ed07422-79e2-4bf8-aa9b-ec1baed0ddaa"
+      Value: "47d77f9f-9c3a-4164-853b-933ec4385678"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\yseme2@softserveinc.com
+        sitecore\aivanova@softserveinc.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250613T175020Z
+      Value: 20250902T142422Z

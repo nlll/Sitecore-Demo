@@ -54,32 +54,32 @@ Languages:
               s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
               s:ph="headless-main" />
             <r
-              uid="{CE46532C-112E-4959-8064-5233F7990662}"
+              uid="{0D193BBC-A01A-4AD8-8EAF-AFC6D458A053}"
               p:after="r[@uid='{2E4AD191-5A45-43F0-B652-2884BED4BCF8}']"
               s:ds="local:/Data/About TireHub Section"
-              s:id="{D6B9F790-4C5A-4D0F-A770-B72D52C565B3}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=3"
+              s:id="{7D7976D0-2A3F-47FE-A0CB-FB6EF8ECB02B}"
+              s:par="CSSStyles"
               s:ph="/headless-main/container-1" />
             <r
+              uid="{7FB536E2-171C-44AC-866B-5D53FA5735AB}"
+              p:after="r[@uid='{0D193BBC-A01A-4AD8-8EAF-AFC6D458A053}']"
+              s:ds="local:/Data/Info Cards"
+              s:id="{A22EA9C1-FDA3-43F6-B6ED-4A53E29C35A2}"
+              s:par="CSSStyles&amp;DynamicPlaceholderId=11"
+              s:ph="/headless-main/container-1/headless-section-{0D193BBC-A01A-4AD8-8EAF-AFC6D458A053}-0" />
+            <r
               uid="{81286906-1C3B-484D-B0F5-1C0B4EAEDFB1}"
-              p:after="r[@uid='{CE46532C-112E-4959-8064-5233F7990662}']"
+              p:after="r[@uid='{7FB536E2-171C-44AC-866B-5D53FA5735AB}']"
               s:ds="local:/Data/Contact Us"
               s:id="{D5F20A57-9EC1-4C1E-8F10-2EED00AF2943}"
               s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=9"
               s:ph="headless-main" />
             <r
               uid="{CE9ABB07-7508-43AE-8778-91C2AB7DA480}"
-              p:after="r[@uid='{81286906-1C3B-484D-B0F5-1C0B4EAEDFB1}']"
+              p:after="*[1=2]"
               s:ds="local:/Data/Video Presentation"
               s:id="{9E785D95-A6BE-4A21-88B8-FED7E31B91FD}"
               s:par="CSSStyles&amp;Styles"
-              s:ph="/headless-main/container-1/headless-section-0-3" />
-            <r
-              uid="{803F767B-074B-4CB2-91D7-16D5630BEAB0}"
-              p:after="*[1=2]"
-              s:ds="local:/Data/Info Cards"
-              s:id="{A22EA9C1-FDA3-43F6-B6ED-4A53E29C35A2}"
-              s:par="CSSStyles&amp;DynamicPlaceholderId=4"
               s:ph="/headless-main/container-1/headless-section-0-3" />
           </d>
         </r>
@@ -99,7 +99,7 @@ Languages:
         sitecore\lmacura@softserveinc.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0345888f-9f7f-437a-b1ee-c29c15be3b91"
+      Value: "85aba2fd-d4aa-47fc-9f89-601b20dd9d6d"
     - ID: "a52fd683-9a86-4d5d-a8dc-95db00370c7d"
       Hint: Title
       Value: Home
@@ -109,4 +109,4 @@ Languages:
         sitecore\aivanova@softserveinc.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250901T141812Z
+      Value: 20250902T154947Z
