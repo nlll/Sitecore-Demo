@@ -1,0 +1,60 @@
+﻿---
+ID: "02da1433-b124-458d-b895-cac931c0e656"
+Parent: "669008be-a988-414a-a898-edc59d056792"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: /sitecore/media library/Project/demo/demo/iconDQ
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/02DA1433B124458DB895CAC931C0E656.ashx?h=16&thn=1&w=16"
+- ID: "22eac599-f13b-4607-a89d-c091763a467d"
+  Hint: Width
+  Value: 17
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "aabfd8f3-a69b-471a-ace9-5f289a980ec3"
+  Value: iVBORw0KGgoAAAANSUhEUgAAABEAAAASCAYAAAC9+TVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIpSURBVDhPpZM9aFNRGIbfG0zSm6RSoogJ/oAtNVpKKRSk/uDPokNtLZjZOjhU0MWCILjoIg6CYgcLXRRBxCWg6JBadejg0CZWm+ptTNKU1Cb0L7a3yc1NXofUyz1JRMRnfL/vvOfl+86RSBL/iVTL5ON0DsNvVjH2JYf1XAlHWmT4j9eju9NZ2QrUMum/n8aTYBbHWmXs32WDbJcwndQwMqHiaIuM5ze9cMmS+QhAE4OBZbp7Z/hhUjXLJMmvSY2+izFefrBQWaJhohdJd+8M7zxbFDtMBMbW6OxSGE1pgm75nejbnIZ8gTjZ5hCjmjjdUa6FonlBN0ySaR0A4Nm2xVwXsFslbHVYEP9REHTDZJ/XCgCYy5TNarG2QWTVEhq9NkE3TBo9VjjsEkbDqtBgJji+DgBob7KLBfOAhl6tsOGcwvefqrczlcizuS/Gq4PpyhKr3snw61UMDGVwyCfDt7v8TiKzGt6GVFzpacDtvu2wGPnLVJkAwNSshqfBLKLzBRR0Ys8OK3oOu3CiTa5sBf5k8q9UBBOJL+j4HNfwt2uEJHoReBhYxrvwBsaVHJZ+lgAAzjoJ7U116DxYh2vn3VV/xzBJLOi4cHce4e95nOlw4sBe2+ZgLYgkNERm8xiZUOGSLXh83YOOZtOaufkndvqjbL0U52QsL6zPTGpR56mBJOu7Fd57sWToGA2pdJ1V6L+VYlYtCodqoRfJG8MZOrsUPnq5QpL8BSpTx5zWoJgnAAAAAElFTkSuQmCC
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 660
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/png
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: png
+- ID: "cb09946f-3218-4823-87d2-d5007c199a96"
+  Hint: Dimensions
+  Value: 17 x 18
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "c60400d4-25db-4872-888a-d825cbd7babc"
+- ID: "de2ca9e4-c117-4c8a-a139-1ff4b199d15a"
+  Hint: Height
+  Value: 18
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250826T202851Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\aivanova@softserveinc.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\aivanova@softserveinc.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ef2a599c-6f1f-4521-a01e-fa3b12f96abc"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\aivanova@softserveinc.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250826T202851Z

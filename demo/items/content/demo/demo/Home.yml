@@ -43,7 +43,7 @@ Languages:
             <r
               uid="{84A7245A-6388-4A36-9130-8DFE73F1583C}"
               p:before="*"
-              s:ds="local:/Data/Hero Slider"
+              s:ds="{D2FE2C99-21D1-46E5-A090-04A84628688D}"
               s:id="{F902BA71-71EF-4820-A0D5-9B34111F10BD}"
               s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=6"
               s:ph="/headless-main" />
@@ -99,14 +99,14 @@ Languages:
         sitecore\lmacura@softserveinc.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "44151e29-f775-4fdc-ae77-211782ba24a8"
+      Value: "0345888f-9f7f-437a-b1ee-c29c15be3b91"
     - ID: "a52fd683-9a86-4d5d-a8dc-95db00370c7d"
       Hint: Title
       Value: Home
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\yseme2@softserveinc.com
+        sitecore\aivanova@softserveinc.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250617T142055Z
+      Value: 20250901T141812Z

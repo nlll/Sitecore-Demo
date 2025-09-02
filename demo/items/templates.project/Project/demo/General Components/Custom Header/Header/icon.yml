@@ -1,15 +1,21 @@
 ﻿---
-ID: "58a88fe8-1867-4606-aa3e-b2a16bcb62a1"
-Parent: "b127b101-0837-4682-9e63-0a5eb2690844"
-Template: "6f108e3c-5d57-42f8-a910-c22920269b0a"
-Path: /sitecore/content/demo/demo/Data/Custom Header Navigation/Programs and Services
+ID: "47d42368-fcba-4b25-b2b8-e41739b2d2ac"
+Parent: "3bbc3b07-c865-4b11-bc05-7ef3938cb79c"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Project/demo/General Components/Custom Header/Header/icon
 SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: "query:$siteMedia"
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Image
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 175
+  Value: 400
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "388d8540-fec7-4a47-8842-7c51cb2f3b19"
+  Value: "6d3ff7b6-5164-4135-84f6-3a4f09b02640"
 Languages:
 - Language: en
   Versions:
@@ -17,26 +23,22 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20250617T121509Z
+      Value: 20250826T194625Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
-        sitecore\yseme2@softserveinc.com
+        sitecore\aivanova@softserveinc.com
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\yseme2@softserveinc.com
-    - ID: "68c2a603-f98e-42a3-be2d-dd70598c2a63"
-      Hint: Link
-      Value: |
-        <link text="DQ® CAKES" linktype="external" url="" anchor="" target="" />
+        sitecore\aivanova@softserveinc.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "8ddad92b-0d1f-491e-902b-ae26f8f7d055"
+      Value: "40894e91-85fa-469d-9c1b-af20ce08a6b0"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\aivanova@softserveinc.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250828T143950Z
+      Value: 20250826T194642Z

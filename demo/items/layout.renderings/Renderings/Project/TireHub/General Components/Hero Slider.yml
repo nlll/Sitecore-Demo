@@ -15,7 +15,7 @@ SharedFields:
   Value: 
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: /sitecore/templates/Project/demo/General Components/Hero Slider
+  Value: /sitecore/templates/Project/demo/General Components/Hero
 - ID: "7d8ae35f-9ed1-43b5-96a2-0a5f040d4e4e"
   Hint: Open Properties after Add
   Value: 0
@@ -30,13 +30,13 @@ SharedFields:
   Value: "{A82E8931-0575-4175-917D-E904EF7E6DBE}"
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: "query:$site/*[@@name='Data']/*[@@templatename='Heroes Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='HeroesFolder']"
+  Value: /sitecore/content/demo/demo/Data/Dq Hero
 - ID: "c39a90ce-0035-41bb-90f6-3c8a6ea87797"
   Hint: AddFieldEditorButton
   Value: 
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "6b1b5165-0e27-487a-81e9-1988299310d8"
+  Value: "63eb31d4-3499-4a14-9f0b-520a9460cef4"
 - ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
   Hint: OtherProperties
   Value: IsRenderingsWithDynamicPlaceholders=true
@@ -77,7 +77,7 @@ Languages:
   Fields:
   - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
     Hint: __Unversioned revision
-    Value: "2c332dcb-6a32-4630-9c72-46fdc08fb3ba"
+    Value: "ac34a4be-7e67-42c1-a9b0-28ad071ab06b"
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
     Value: 
@@ -93,14 +93,14 @@ Languages:
         sitecore\JssImport
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "33745234-a84e-4628-8337-20134ff0798d"
+      Value: "1bdd8f73-e863-4370-95e1-504f4d87c4a2"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\yseme2@softserveinc.com
+        sitecore\aivanova@softserveinc.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250613T173558Z
+      Value: 20250901T141706Z
 - Language: "ja-JP"
   Fields:
   - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
