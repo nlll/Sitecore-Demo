@@ -3,14 +3,11 @@ import React from 'react';
 import {
   ImageField,
   NextImage as JssImage,
-  RichText,
   Link as JssLink,
   LinkField,
-  Field,
   Text,
   ComponentParams,
   ComponentRendering,
-  useSitecoreContext,
   TextField
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
