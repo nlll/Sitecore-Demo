@@ -3,6 +3,13 @@ ID: "d2fe2c99-21d1-46e5-a090-04a84628688d"
 Parent: "49d5531c-8b4b-4a54-b140-8912d186f5a5"
 Template: "b24656f4-bcce-4931-b7e9-99ca8a295475"
 Path: /sitecore/content/demo/demo/Data/Dq Hero
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "652da706-3354-4f38-9067-427c53ee2e8a"
 Languages:
 - Language: en
   Versions:
@@ -31,7 +38,7 @@ Languages:
       Value: Cozy up to our seasonal sweet treats, available
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "5839db89-e8c9-44fe-86b2-d702945f72e0"
+      Value: "bc61ce89-756c-493a-ac07-89deb9459610"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
@@ -41,7 +48,7 @@ Languages:
       Value: "limited time only!"
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250901T185901Z
+      Value: 20250903T081512Z
     - ID: "dedf9890-4567-4141-9881-781f056c389c"
       Hint: link
       Value: |

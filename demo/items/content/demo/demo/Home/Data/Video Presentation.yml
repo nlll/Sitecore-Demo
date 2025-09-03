@@ -11,10 +11,18 @@ Languages:
     - ID: "0d7c09af-e8ca-458a-9471-bcb387ff24d4"
       Hint: videoUrl
       Value: |
-        <link linktype="external" url="https://www.youtube.com/embed/QH-xGEoj_-E" anchor="" target="" />
+        <link text="VIEW THEM ALL" linktype="external" url="https://www.dairyqueen.com/en-us/menu/food/burgers-and-sandwiches/" anchor="" target="" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20250612T110748Z
+    - ID: "29fd62f6-1a43-429d-aef0-e046ab283402"
+      Hint: text4
+      Value: |
+        <p class="body--1 hidden lg:block" style="color: #2b3437; background-color: #fefaf5; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; border: 0px solid #cdd5d7; letter-spacing: 0.02em; line-height: 1.5;">There&rsquo;s no room for the ordinary here. Make way for DQ&reg; Signature Stackburgers&trade;: a flavor variety that achieves maximum flavor capacity.</p>
+    - ID: "44eebb9f-4bfd-4648-aba5-8c190e458496"
+      Hint: text3
+      Value: |
+        <span style="color: #2b3437; background-color: #fefaf5; letter-spacing: 0.48px;">Meat the DQ&reg; Signature Stackburgers&trade;</span>
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -25,15 +33,26 @@ Languages:
         sitecore\yseme2@softserveinc.com
     - ID: "85587d6a-26ab-4397-8c88-45ded478304a"
       Hint: text
-      Value: |
-        <div class="ck-content"><p>TireHub is a national tire distributor that delivers to U.S. tire and automotive retailers the full passenger and light truck tire portfolios of Goodyear and Bridgestone. We’re out to set a new standard of excellence for tire distribution in the U.S., and we’ll do it by <strong>focusing on the needs of our dealers and their customers.&nbsp;</strong></p></div>
+      Value: Flavors made for the burger lover
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "2e8f8967-27d0-48a3-aae9-57b613119b43"
+      Value: "aa8b3b88-e55c-40e8-bcd9-72b7c828e715"
+    - ID: "9df2f57e-6797-4c22-af67-ff0cb460f302"
+      Hint: text2
+      Value: |
+        <span style="color: #2b3437; background-color: #fefaf5; letter-spacing: -0.54px;">DQ&reg; Signature Stackburgers&trade;</span>
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\lmacura@softserveinc.com
+        sitecore\aivanova@softserveinc.com
+    - ID: "c72de10b-d1b6-4eaf-8fb6-6fad19760e81"
+      Hint: foodUrl
+      Value: |
+        <link text="CHEESE DELUXE STACKBURGER" linktype="external" url="https://www.dairyqueen.com/en-us/menu/cheese-deluxe-stackburger/" anchor="" target="" />
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250617T064610Z
+      Value: 20250903T184119Z
+    - ID: "e086b42d-5449-43b5-8fe6-4ab7a393c92d"
+      Hint: imageDq
+      Value: |
+        <image mediaid="{847A79CB-080E-407F-A3DF-6083E8A54882}" />

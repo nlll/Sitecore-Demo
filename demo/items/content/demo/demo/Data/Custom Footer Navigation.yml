@@ -3,6 +3,13 @@ ID: "e4ceec90-cf3c-4389-8de9-a5b6262e9aa4"
 Parent: "49d5531c-8b4b-4a54-b140-8912d186f5a5"
 Template: "bd5e446f-9921-4c19-923c-fcf68e2576eb"
 Path: /sitecore/content/demo/demo/Data/Custom Footer Navigation
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "00e216f7-74a8-40b2-978a-4e0ae49a9c0e"
 Languages:
 - Language: en
   Versions:
@@ -13,20 +20,18 @@ Languages:
       Value: 20250614T173637Z
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "e3242848-b530-443e-a26c-36d27e6d24f8"
+      Value: "961bfb61-f5cf-4a7f-aa5d-219fa7836e15"
     - ID: "b08a3c7a-622f-4478-87db-7efd2745a20b"
       Hint: copyRight
-      Value: Copyright @ 2018 TireHub, LLC, All rights reserved.'
+      Value: 
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\yseme2@softserveinc.com
+        sitecore\aivanova@softserveinc.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250614T174344Z
+      Value: 20250903T125844Z
     - ID: "dde5afc4-6ca3-4e7b-a2c2-19a572712ede"
       Hint: address
       Value: |
-        1 Ravinia Drive NE, Suite 1300, Dunwoody, GA 30346				<span> - </span>
-        English: (833) 847-3482				<span> - </span>
-        Spanish: (866) 418-0682
+        <span style="text-align: center; letter-spacing: 0.12px; color: #041531;">&bull; The DQ, Dairy Queen, ellipse shaped logo, Happy Tastes Good, Blizzard, MooLatte, Peanut Buster, Buster Bar, Dilly, Royal Treat, Royal Treats, Misty, Orange Julius, Julius, Tripleberry, Flamethrower and other related trademarks are owned by Am. D.Q. Corp. &copy; 2025. Products and menus may vary by location; not all products listed are available in all locations.</span>
