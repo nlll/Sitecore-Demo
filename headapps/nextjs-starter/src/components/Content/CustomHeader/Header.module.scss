@@ -1,7 +1,7 @@
 .root {
   background-color: white;
   display: flex; 
-  padding: 20px;
+  padding: 15px;
   border: 2px solid #f9f8f888; 
   border-radius: 50px / 50px;     /* makes edges rounded */
   flex-flow: column wrap;
@@ -11,14 +11,22 @@
   left: 50%;         /* center horizontally */
   transform: translateX(-50%); /* center header */
   align-items: center;
-  width: 90%;        /* adjust width */
+  //width: 90%;        /* adjust width */
   max-width: 1300px; /* optional max width */
   z-index: 1000;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* optional floating shadow */
 
-    @media screen and (width > 1024px) {
-       align-items: center;
-    }
+  width: 100%;
+    // @media screen and (width > 1024px) {
+    //    align-items: center;
+    // }
+
+    @media (min-width: 1024px) {
+        align-items: center;  
+}
+    @media (min-width: 1024px) {
+       flex-direction: row;
+}
 }
 
 .logoLink {

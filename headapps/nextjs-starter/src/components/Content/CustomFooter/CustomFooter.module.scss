@@ -6,8 +6,8 @@
 .footerNav {
     width: 100%; // Ensure the navigation spans the full width
     padding: 48px 0;
-    background: #012169; // Keep the existing background color
-    color: white; // Keep the existing text color
+    background: #f0fcff; // Keep the existing background color
+    color: rgb(4, 13, 100); // Keep the existing text color
 }
 
 .footerLinks {
@@ -30,9 +30,9 @@
     text-decoration: none;
     transition: color 0.3s ease;
 
-    &:hover {
-        color: #da291c; // Keep the hover color
-    }
+    // &:hover {
+    //     color: #da291c; // Keep the hover color
+    // }
 }
 
 .copyRight {
