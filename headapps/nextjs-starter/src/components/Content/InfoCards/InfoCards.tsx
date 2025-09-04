@@ -1,3 +1,4 @@
+/* eslint-disable*/
 import React from 'react';
 import {
   ComponentParams,
@@ -7,7 +8,7 @@ import {
   Text,
   Image,
   LinkField,
-  Link,
+  Link as JssLink,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import styles from './InfoCards.module.scss';
 
@@ -29,13 +30,21 @@ type InfoCardProps = {
 };
 
 const InfoCard = ({ fields }: InfoCardProps) => {
+   console.log('Promos', fields);
   return (
     <div className={styles.infoCard}>
+      <Image field={fields.image} className={styles.image} />
       <Text field={fields.heading} className={styles.title} tag="h3" />
-      <Link field={fields.link} className={styles.link}>
-        <Image field={fields.image} className={styles.image} />
-      </Link>
       <Text field={fields.description} className={styles.description} tag="p" />
+        {fields.link && (
+          <JssLink
+            field={fields.link}
+            href={fields.link.value.href}
+            title={fields.link.value.text}
+            className={styles.link}
+          />
+        )}
+      {/* <Link field={fields.link} className={styles.link}></Link> */}
     </div>
   );
 };

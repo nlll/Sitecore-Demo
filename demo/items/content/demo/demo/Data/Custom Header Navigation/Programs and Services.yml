@@ -29,14 +29,14 @@ Languages:
     - ID: "68c2a603-f98e-42a3-be2d-dd70598c2a63"
       Hint: Link
       Value: |
-        <link text="Programs &amp; Services" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{462EBD60-1C3B-434B-A65B-4A020DB2E9C6}" />
+        <link text="DQ® CAKES" linktype="external" url="" anchor="" target="" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0cd88879-d709-4cd4-a031-e3d4aad22f5c"
+      Value: "8ddad92b-0d1f-491e-902b-ae26f8f7d055"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\yseme2@softserveinc.com
+        sitecore\aivanova@softserveinc.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250617T122825Z
+      Value: 20250828T143950Z

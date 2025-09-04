@@ -49,8 +49,8 @@ interface CustomHeaderProps {
   fields: Fields;
 }
 
-const LOGO_IMAGE_SRC = '/TireHub_Logo.png';
-const LOGO_ALT_TEXT = 'TireHub';
+const LOGO_IMAGE_SRC = '/DairyQueen_Logo.png';
+const LOGO_ALT_TEXT = 'Dairy Queen';
 
 
 export const Default = (props: CustomHeaderProps): JSX.Element => {

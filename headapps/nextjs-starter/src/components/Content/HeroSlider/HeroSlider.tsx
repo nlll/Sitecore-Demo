@@ -31,7 +31,6 @@ interface HeroProps {
 export const Default = (props: CustomSliderProps) : JSX.Element=> {
  
   const Image = () => <JssImage field={props.fields.backgroundImage} className={styles.image} />;
-  console.log('FIELDS', props.fields.backgroundImage);
   return (
       <section className={styles.imageContainer}>
       <div className={styles.image}>

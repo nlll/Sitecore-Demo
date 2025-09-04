@@ -41,7 +41,7 @@ export const Default = (props: CustomFooterProps): JSX.Element => {
           <ul className={styles.footerLinks}>
             {props.fields.data.datasource.children &&
               props.fields.data.datasource.children.results.length > 0 &&
-              props.fields.data.datasource.children.results.map((nav, index) => (
+              props.fields.data.datasource.children.results.slice(0,9).map((nav, index) => (
                 <li key={index}>
                   <Link field={nav.field.link} className={styles.link} />
                   {props.fields.data.datasource.children.results &&

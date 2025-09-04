@@ -1,0 +1,48 @@
+﻿---
+ID: "23d8bf9b-93cb-478a-9d68-46a92ed0b1e0"
+Parent: "007270e3-c35c-4e9d-a473-a2ac510b8f8c"
+Template: "b24656f4-bcce-4931-b7e9-99ca8a295475"
+Path: /sitecore/content/demo/demo/Data/Heroes/Blizzard Cups
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0a4d5bd8-af1f-474b-ab90-24c5fe60daa1"
+      Hint: backgroundImage
+      Value: |
+        <image mediaid="{555B6BE2-1651-4464-B1CE-46CCA5576CD8}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250612T172218Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "62880a61-4901-4905-b0f6-3583f5eaf907"
+      Hint: subHeading
+      Value: "Cozy up to our seasonal sweet treats, available for a limited time only!"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5fbefd83-d669-4e53-8162-1e614c14eae6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\aivanova@softserveinc.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250901T121335Z
+    - ID: "dedf9890-4567-4141-9881-781f056c389c"
+      Hint: link
+      Value: |
+        <link text="ORDER NOW" linktype="external" url="https://www.dairyqueen.com/en-us/order/" anchor="" target="" />
+    - ID: "e82a5e91-842f-4e5b-81a5-8592d0ca9562"
+      Hint: heading
+      Value: Fall for the New Fall Treat Menu at DQ

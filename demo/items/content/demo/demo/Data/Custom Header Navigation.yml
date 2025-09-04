@@ -7,10 +7,10 @@ SharedFields:
 - ID: "6e2d5afc-4bad-44bb-b5fe-b06cf73fa4fd"
   Hint: logoLink
   Value: |
-    <image mediaid="{5A7BA05C-5309-4612-8A90-0E055DE330D4}" />
+    <image mediaid="{26ED645B-6DE8-4B5E-ACF6-A6099479DE16}" />
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "e791a3e6-23bb-48e0-b128-c44cd7a65b67"
+  Value: "9006a421-8925-4777-994c-b93d42715678"
 Languages:
 - Language: en
   Versions:
@@ -19,17 +19,25 @@ Languages:
     - ID: "0c0acf03-5503-47ca-b13c-14b2a669d62b"
       Hint: cta
       Value: |
-        <link text="Order Now" linktype="external" url="https://now.tirehub.com/" anchor="" target="" />
+        <link text="SIGN IN/UP" linktype="external" url="https://www.dairyqueen.com/en-us/sign-in/" anchor="" target="" />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20250613T133832Z
+    - ID: "47d42368-fcba-4b25-b2b8-e41739b2d2ac"
+      Hint: icon
+      Value: |
+        <image mediaid="{02DA1433-B124-458D-B895-CAC931C0E656}" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "5492bb42-bdb2-4336-8b8b-9c902bdf174f"
+      Value: "738b3aff-ac12-4c29-b995-6d85faec43f5"
+    - ID: "9740924b-0332-4817-a9f1-29f31b67eca6"
+      Hint: cta2
+      Value: |
+        <link text="START ORDER" linktype="external" url="https://www.dairyqueen.com/en-us/order/" anchor="" target="" />
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\yseme2@softserveinc.com
+        sitecore\aivanova@softserveinc.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250613T193217Z
+      Value: 20250826T202916Z

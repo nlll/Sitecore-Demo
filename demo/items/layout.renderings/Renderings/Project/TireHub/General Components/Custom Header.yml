@@ -13,23 +13,48 @@ SharedFields:
 - ID: "17bb046a-a32a-41b3-8315-81217947611b"
   Hint: ComponentQuery
   Value: |
-    query CustomHeaderQuery($datasource: String!, $language: String!) {
-      datasource: item(path: $datasource, language: $language) {
-        children(first: 90) {
+    fragment CustomHeaderQuery on Item{
+      ...on CustomHeader{
+        cta{
+          jsonValue
+        }
+        cta2{
+          jsonValue
+        }
+        logoLink{
+          jsonValue
+        }
+        icon_47d42368fcba4b25b2b8e41739b2d2ac{
+          jsonValue
+        }
+      }
+    }
+    
+       query{
+        item(path: "/sitecore/content/demo/demo/Data/Custom Header Navigation", language: "en"){
+          ...CustomHeaderQuery
+          children(first: 90) {
           results {
             field(name: "Link") {
               link: jsonValue
             }
           }
         }
-        cta: field(name: "cta") {
-          jsonValue
-        } 
-     logoLink: field(name: "logoLink") {
-          jsonValue
-        } 
-      }
-    }
+          
+          
+        }
+      
+      }  
+        
+    
+    
+    
+         
+         
+         
+     
+     
+    
     
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
@@ -57,7 +82,7 @@ SharedFields:
   Value: 
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "14790976-ba5d-4347-8ada-625ca711b15f"
+  Value: "4528e31e-4483-498f-b38b-7db51df414b2"
 - ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
   Hint: OtherProperties
   Value: IsRenderingsWithDynamicPlaceholders=true
@@ -114,14 +139,14 @@ Languages:
         sitecore\JssImport
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "997213cc-c007-497c-a64e-611a69401826"
+      Value: "f55e207f-f665-4e8c-ad2e-5b4e0e169186"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\yseme2@softserveinc.com
+        sitecore\aivanova@softserveinc.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250619T153617Z
+      Value: 20250827T151103Z
 - Language: "ja-JP"
   Fields:
   - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"

@@ -1,0 +1,45 @@
+﻿---
+ID: "4982afe9-0097-424a-a3dc-8078e3e5f2d3"
+Parent: "204129b8-5bd6-4047-ad20-0ee975361345"
+Template: "0f6a39cf-7123-49c6-8965-ad5ecd683f7a"
+Path: /sitecore/content/demo/demo/Data/Info Cards Folder/Burgers
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "03271064-4829-4392-bcd6-2a6d0d7a102b"
+      Hint: heading
+      Value: This isn't your average burger
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250613T174120Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\yseme2@softserveinc.com
+    - ID: "72e349bc-6bc2-4c00-83a6-f454e0cbea30"
+      Hint: image
+      Value: |
+        <image mediaid="{1953A5E0-DF44-4E79-B5DE-70E821BDAE16}" />
+    - ID: "892808a8-fedc-4647-a9c3-771dbd9af09e"
+      Hint: description
+      Value: "Stacked with 100% seasoned real beef patties and layers of bold, crave-worthy flavors, our five Signature Stackburgers™ deliver pure satisfaction."
+    - ID: "894cd40a-a13d-4c2b-bef9-3f962fdd6976"
+      Hint: link
+      Value: |
+        <link text="Get Yours Now &gt;" linktype="external" url="https://www.dairyqueen.com/en-us/menu/food/burgers-and-sandwiches/" anchor="" target="|Custom" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8ba79286-a501-46fd-a758-5619af6bcf56"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\aivanova@softserveinc.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250902T142546Z

@@ -14,6 +14,7 @@ interface SectionProps {
 }
 
 export const Default = (props: SectionProps): JSX.Element => {
+  console.log('Heading', props.fields.Heading);
   return (
     <div className={styles.root}>
       <div className="row justify-content-center">

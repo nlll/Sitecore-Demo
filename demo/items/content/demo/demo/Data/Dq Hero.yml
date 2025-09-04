@@ -1,0 +1,58 @@
+﻿---
+ID: "d2fe2c99-21d1-46e5-a090-04a84628688d"
+Parent: "49d5531c-8b4b-4a54-b140-8912d186f5a5"
+Template: "b24656f4-bcce-4931-b7e9-99ca8a295475"
+Path: /sitecore/content/demo/demo/Data/Dq Hero
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "652da706-3354-4f38-9067-427c53ee2e8a"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0a4d5bd8-af1f-474b-ab90-24c5fe60daa1"
+      Hint: backgroundImage
+      Value: |
+        <image mediaid="{555B6BE2-1651-4464-B1CE-46CCA5576CD8}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250901T123913Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\aivanova@softserveinc.com
+    - ID: "56f70649-a338-405d-88c9-f9e889f2d91c"
+      Hint: headingLine
+      Value: Treat Menu at DQ
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\aivanova@softserveinc.com
+    - ID: "62880a61-4901-4905-b0f6-3583f5eaf907"
+      Hint: subHeading
+      Value: Cozy up to our seasonal sweet treats, available
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bc61ce89-756c-493a-ac07-89deb9459610"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\aivanova@softserveinc.com
+    - ID: "d5cc4b7f-e060-47c4-bb5d-6d9964da71fb"
+      Hint: subHeadingLine
+      Value: "limited time only!"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20250903T081512Z
+    - ID: "dedf9890-4567-4141-9881-781f056c389c"
+      Hint: link
+      Value: |
+        <link text="ORDER NOW" linktype="external" url="https://www.dairyqueen.com/en-us/order/" anchor="" target="" />
+    - ID: "e82a5e91-842f-4e5b-81a5-8592d0ca9562"
+      Hint: heading
+      Value: Fall for the New Fall

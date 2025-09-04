@@ -29,14 +29,14 @@ Languages:
     - ID: "68c2a603-f98e-42a3-be2d-dd70598c2a63"
       Hint: Link
       Value: |
-        <link text="Home" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{165CEBFF-1831-42C0-AA39-EADD875C24D0}" />
+        <link text="ABOUT US" linktype="external" url="https://www.dairyqueen.com/en-us/" anchor="" target="" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9989a028-a356-49c6-b734-a66f9fd996d9"
+      Value: "802d6de1-679d-4a9e-9db4-ec00fdb8e70e"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\yseme2@softserveinc.com
+        sitecore\aivanova@softserveinc.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250617T122255Z
+      Value: 20250903T124234Z

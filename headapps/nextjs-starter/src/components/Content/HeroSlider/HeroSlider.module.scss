@@ -17,16 +17,19 @@
 }
 
 .image {
-    // width: 100%;
-    // height: 100%;
-    // display: block;
-    // object-fit: cover;
+     object-fit: cover;
     // object-position: top center;
     transition: opacity 0.5s ease-in-out;
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+
+    z-index: -1;
+    @media (min-width: 640px) {
+     
+        position: absolute; 
+}
 }
 
 .content {
@@ -38,7 +41,21 @@
     background-color: white;
     padding: 50px 40px;
     border-radius: 12px;
-    justify-content: space-between;
+    // justify-content: space-between;
+
+    // display: flex;
+    // //  position: relative;
+    // flex-direction: column;
+    // justify-content: center;
+
+    // @media (min-width: 1024px) {
+     
+    //     margin-left: 5rem;
+    //     max-width: 566px;
+    //     min-height: 320px;
+    //     min-width: 350px;
+    //     padding: 3rem 2.5rem;
+    // }
 }
 
 .titleParagraph {
